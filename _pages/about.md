@@ -16,7 +16,7 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 <span class='anchor' id='about-me'></span>
-Hi, I'm Jiwen. I am a first-year Ph.D. student at The University of Hong Kong (HKU), supervised by Prof. [Xihui Liu](https://xh-liu.github.io/). Currently, I also work as a research intern at Kuaishou Technology under the guidance of Dr. [Xintao Wang](https://xinntao.github.io/). Prior to this, I received my Master's degree from Peking University, where I was supervised by Prof. [Jian Zhang](https://jianzhang.tech/). My research interests cover generative models and embodied AI, with a particular focus on physical and virtual applications of video generation models.
+Hi, I'm Jiwen. I am a first-year Ph.D. student at The University of Hong Kong (HKU), supervised by Prof. [Xihui Liu](https://xh-liu.github.io/). Currently, I also work as a research intern at Kuaishou Technology under the guidance of Dr. [Xintao Wang](https://xinntao.github.io/), working closely with my friend [Yiran Qin](https://github.com/IranQin). Prior to this, I received my Master's degree from Peking University, where I was supervised by Prof. [Jian Zhang](https://jianzhang.tech/). My research interests cover generative models and embodied AI, with a particular focus on physical and virtual applications of video generation models.
 
 I am always open to academic and industrial collaborations. My specific research interests include:
 
