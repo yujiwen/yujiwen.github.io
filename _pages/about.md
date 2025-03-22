@@ -150,7 +150,7 @@ ICLR, 2023
 
 <div class="experience-box">
     <div class="experience-box-logo">
-        <img src="images/logo/hku.jpg" alt="HKU Logo">
+        <img src="images/logo/HKU.jpg" alt="HKU Logo">
     </div>
     <div class="experience-box-text">
         <p><strong>2024.09 - Now</strong></p>
