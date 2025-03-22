@@ -44,7 +44,7 @@ Video generation models learn world knowledge from large-scale video data, showi
 
 Preprint, 2025
 
-[**Paper**](https://arxiv.org/pdf/2501.08325) **|** [**Project Page**](https://vvictoryuki.github.io/gamefactory/) **|** [**GitHub**](https://github.com/KwaiVGI/GameFactory) **|** [**Dataset**](https://huggingface.co/datasets/KwaiVGI/GameFactory-Dataset)
+[**Paper**](https://arxiv.org/pdf/2501.08325) **|** [**Project Page**](https://yujiwen.github.io/gamefactory/) **|** [**GitHub**](https://github.com/KwaiVGI/GameFactory) **|** [**Dataset**](https://huggingface.co/datasets/KwaiVGI/GameFactory-Dataset)
 </div>
 </div>
 
@@ -100,7 +100,7 @@ My research journey began during my Master's studies, coinciding with the paradi
 
 Project, 2023
 
-[**Paper**](https://arxiv.org/abs/2312.03793) **|** [**Project Page**](https://vvictoryuki.github.io/animatezero.github.io/)
+[**Paper**](https://arxiv.org/abs/2312.03793) **|** [**Project Page**](https://yujiwen.github.io/animatezero.github.io/)
 </div>
 </div>
 
@@ -113,7 +113,7 @@ Project, 2023
 
 NeurIPS, 2023
 
-[**Paper**](https://arxiv.org/abs/2305.16936) **|** [**GitHub**](https://github.com/vvictoryuki/CRoSS)
+[**Paper**](https://arxiv.org/abs/2305.16936) **|** [**GitHub**](https://github.com/yujiwen/CRoSS)
 </div>
 </div>
 
@@ -126,7 +126,7 @@ NeurIPS, 2023
 
 ICCV, 2023
 
-[**Paper**](https://arxiv.org/abs/2303.09833) **|** [**GitHub**](https://github.com/vvictoryuki/FreeDoM)
+[**Paper**](https://arxiv.org/abs/2303.09833) **|** [**GitHub**](https://github.com/yujiwen/FreeDoM)
 </div>
 </div>
 
