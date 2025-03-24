@@ -57,6 +57,8 @@ Preprint, 2025
 
 Preprint, 2025
 
+[**Paper**](https://arxiv.org/abs/2503.17359)
+
 </div>
 </div>
 
