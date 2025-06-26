@@ -16,13 +16,13 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 <span class='anchor' id='about-me'></span>
-Hi, I'm Jiwen. I am a first-year Ph.D. student at The University of Hong Kong (HKU), supervised by Prof. [Xihui Liu](https://xh-liu.github.io/). Currently, I also work as a research intern at Kuaishou Technology under the guidance of Dr. [Xintao Wang](https://xinntao.github.io/), working closely with my friend [Yiran Qin](https://github.com/IranQin). Prior to this, I received my Master's degree from Peking University, where I was supervised by Prof. [Jian Zhang](https://jianzhang.tech/). My research interests cover generative models and embodied AI, with a particular focus on physical and virtual applications of video generation models.
+Hi, I'm Jiwen. I am a first-year Ph.D. student at The University of Hong Kong (HKU), supervised by Prof. [Xihui Liu](https://xh-liu.github.io/). Currently, I also work as a research intern at [Kling](https://klingai.com/) team of Kuaishou Technology under the guidance of Dr. [Xintao Wang](https://xinntao.github.io/), working closely with my friend [Yiran Qin](https://github.com/IranQin). Prior to this, I received my Master's degree from Peking University, where I was supervised by Prof. [Jian Zhang](https://jianzhang.tech/). My research interests cover generative models and embodied AI, with a particular focus on physical and virtual applications of video generation models.
 
 I am always open to academic and industrial collaborations. My specific research interests include:
 
-- **Development of foundational video generation models** (autoregressive models, causal inference, and efficient architectures)
+- **Development of foundational video generation models** (streaming generation, multi-modal, scaling laws)
 - **Video generation models as world simulators** (generalization, physics-compliance, memory consistency, and causal reasoning)
-- **Multi-agent embodied AI**
+- **Multi-agent Embodied AI**
 
 Feel free to reach out for research discussions and potential collaborations!
 
@@ -31,46 +31,48 @@ Feel free to reach out for research discussions and potential collaborations!
 
 (*: indicates equal contribution; #: indicates corresponding author)
 
-## Current Research Topics: Video Generation Model / World Model / Embodied AI
+## Current Research Topics: Interactive Video Generation / World Model / Embodied AI
 
 Video generation models learn world knowledge from large-scale video data, showing promise in simulating the physical world and even synthesizing novel virtual worlds. I envision video generation models evolving into comprehensive world simulators, with applications spanning gaming, embodied AI, and beyond.
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/paper/gamefactory.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 2025</div><img src='images/paper/gamefactory.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **GameFactory: Creating New Games with Generative Interactive Videos**
 
 <u><strong>Jiwen Yu</strong></u><sup>*</sup>, Yiran Qin<sup>*</sup>, Xintao Wang<sup>#</sup>, Pengfei Wan, Di Zhang, Xihui Liu<sup>#</sup>
 
-Preprint, 2025
+ICCV, 2025
 
 [**Paper**](https://arxiv.org/pdf/2501.08325) **|** [**Project Page**](https://yujiwen.github.io/gamefactory/) **|** [**GitHub**](https://github.com/KwaiVGI/GameFactory) **|** [**Dataset**](https://huggingface.co/datasets/KwaiVGI/GameFactory-Dataset)
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/paper/igv_position.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/paper/igv_survey.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**Position: Interactive Generative Video as Next-Generation Game Engine**
 
-<u><strong>Jiwen Yu</strong></u><sup>*</sup>, Yiran Qin<sup>*</sup>, Haoxuan Che, Quande Liu, Xintao Wang<sup>#</sup>, Pengfei Wan, Di Zhang, Xihui Liu<sup>#</sup>
+**A Survey of Interactive Generative Video**  
 
-Preprint, 2025
+<u><strong>Jiwen Yu</strong></u><sup>*</sup>, Yiran Qin<sup>*</sup>, Haoxuan Che<sup>*</sup>, Quande Liu<sup>#</sup>, Xintao Wang, Pengfei Wan, Di Zhang, Kun Gai, Hao Chen, Xihui Liu<sup>#</sup>  
 
-[**Paper**](https://arxiv.org/abs/2503.17359)
+**Position: Interactive Generative Video as Next-Generation Game Engine**  
 
+<u><strong>Jiwen Yu</strong></u><sup>*</sup>, Yiran Qin<sup>*</sup>, Haoxuan Che, Quande Liu, Xintao Wang<sup>#</sup>, Pengfei Wan, Di Zhang, Xihui Liu<sup>#</sup>  
+
+[**Survey Paper**](https://arxiv.org/abs/2504.21853) | [**Position Paper**](https://arxiv.org/abs/2503.17359)
 </div>
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='/images/paper/worldsimbench.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2025</div><img src='/images/paper/worldsimbench.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **WorldSimBench: Towards Video Generation Models as World Simulators**
 
 Yiran Qin<sup>*</sup>, Zhelun Shi<sup>*</sup>, <u><strong>Jiwen Yu</strong></u>, Xijun Wang, Enshen Zhou, Lijun Li, Zhenfei Yin, Xihui Liu, Lu Sheng, Jing Shao, Lei Bai, Wanli Ouyang, Ruimao Zhang
 
-Preprint, 2024
+ICML, 2025
 
 [**Paper**](https://arxiv.org/pdf/2410.18072) **|** [**Project Page**](https://iranqin.github.io/WorldSimBench.github.io/)
 </div>
@@ -156,7 +158,7 @@ ICLR, 2023
     </div>
     <div class="experience-box-text">
         <p><strong>2024.09 - Now</strong></p>
-        <p>Ph.D. Student, <a href="https://www.hku.hk/">University of Hong Kong</a>, HKU-<a href="https://mmlab.ie.cuhk.edu.hk/">MMLab</a></p>
+        <p>Ph.D. Student, <a href="https://www.hku.hk/">University of Hong Kong</a>, <a href="https://mmlab.hk/">HKU-MMLab</a></p>
         <p>Advisor: Prof. <a href="https://xh-liu.github.io/">Xihui Liu</a></p>
     </div>
 </div>
@@ -183,7 +185,7 @@ ICLR, 2023
     </div>
     <div class="experience-box-text">
         <p><strong>2024.09 - Now</strong></p>
-        <p>Research Intern at KwaiVGI, <a href="https://www.kuaishou.com/">Kuaishou Technology</a>, Shenzhen, China</p>
+        <p>Research Intern at KwaiVGI, <a href="https://www.kuaishou.com/">Kuaishou Technology</a>, <a href="https://klingai.com/">Kling</a> team, Shenzhen, China</p>
         <p>Advisor: Dr. <a href="https://xinntao.github.io/">Xintao Wang</a></p>
     </div>
 </div>
