@@ -44,6 +44,7 @@ I am always open to academic and industrial collaborations, if you share the vis
     <span style="position:absolute; top:8px; right:16px; font-size:24px; cursor:pointer;" onclick="document.getElementById('wechat-qr').style.display='none';">&times;</span>
     <p style="margin-bottom:8px;"><strong>Scan to add me on WeChat</strong></p>
     <img src="images/wechat_qr.jpg" alt="WeChat QR Code" style="width:220px; height:auto; border-radius:8px;">
+    <p style="margin-top:12px; color:#555; font-size:1em;">Please tell me your name and affiliation (current or past) when adding my wechat. Thanks!</p>
   </div>
 </div>
 
