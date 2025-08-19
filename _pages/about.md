@@ -62,14 +62,14 @@ I am always open to academic and industrial collaborations, if you share the vis
 
 <!-- Video generation models learn world knowledge from large-scale video data, showing promise in simulating the physical world and even synthesizing novel virtual worlds. I envision video generation models evolving into comprehensive world simulators, with applications spanning gaming, embodied AI, and beyond. -->
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">SIGGRAPH Asia 2025</div><img src='images/paper/cam.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ArXiv 2025</div><img src='images/paper/cam.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 <span style="font-size:1.3em;"><strong>Context as Memory: Scene-Consistent Interactive Long Video Generation with Memory Retrieval</strong></span>
 
 <u><strong>Jiwen Yu</strong></u><sup></sup>, Jianhong Bai, Yiran Qin, Quande Liu<sup>#</sup>, Xintao Wang, Pengfei Wan, Di Zhang, Xihui Liu<sup>#</sup>
 
-<span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">SIGGRAPH Asia 2025</span>
+<span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">ArXiv 2025</span>
 
 [**Paper**](https://arxiv.org/pdf/2506.03141) **|** [**Project Page**](https://context-as-memory.github.io/)
 </div>
