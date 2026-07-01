@@ -1,5 +1,11 @@
 <script>
     $(document).ready(function () {
+        var citEl = document.getElementById('total_cit');
+        // Show the last successfully fetched value immediately (falls back to the default in HTML)
+        if (citEl) {
+            var cachedCit = localStorage.getItem('total_cit_cache');
+            if (cachedCit) { citEl.innerHTML = cachedCit; }
+        }
         {% if site.google_scholar_stats_use_cdn %}
         var gsDataBaseUrl = 'https://cdn.jsdelivr.net/gh/{{ site.repository }}@'
         {% else %}
@@ -7,7 +13,9 @@
         {% endif %}
         $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
             var totalCitation = data['citedby']
-            document.getElementById('total_cit').innerHTML = totalCitation;
+            if (citEl) { citEl.innerHTML = totalCitation; }
+            // Persist the latest fetched value as the new default for future visits
+            localStorage.setItem('total_cit_cache', totalCitation);
             var citationEles = document.getElementsByClassName('show_paper_citations')
             Array.prototype.forEach.call(citationEles, element => {
                 var paperId = element.getAttribute('data')

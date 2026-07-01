@@ -33,7 +33,7 @@ I'm building <span style="font-family: 'Orbitron', sans-serif; font-weight: 600;
   </span>
 </span>
 <a href="https://scholar.google.com.hk/citations?user=uoRPLHIAAAAJ" target="_blank" style="display: inline-block; margin-top: 10px; margin-left: 8px; padding: 8px 16px; background: linear-gradient(135deg, #4285F4 0%, #0F9D58 100%); border-radius: 6px; text-decoration: none; vertical-align: top;">
-  <span style="color: #fff; font-size: 0.9em;">🎓 Google Scholar Citations: <strong id="total_cit">--</strong></span>
+  <span style="color: #fff; font-size: 0.9em;">🎓 Google Scholar Citations: <strong id="total_cit">2345</strong></span>
 </a>
 
 <!-- Email Modal -->
