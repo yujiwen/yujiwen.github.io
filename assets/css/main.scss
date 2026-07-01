@@ -56,7 +56,7 @@
         width: 100%;
         order: 2;
         img {
-            max-width: 400px;
+            max-width: 300px;
             box-shadow: 3px 3px 6px #888;
             object-fit: cover;
         }
@@ -70,15 +70,15 @@
     @include breakpoint($medium) {
         .paper-box-image{
             justify-content: left;
-            min-width: 200px;
-            max-width: 40%;
+            min-width: 160px;
+            max-width: 32%;
             order: 1;
         }
         
         .paper-box-text{
             justify-content: left;
-            padding-left: 2em;
-            max-width: 60%;
+            padding-left: 1.6em;
+            max-width: 68%;
             order: 2;
         }
 
@@ -123,7 +123,7 @@ h1:before, .anchor:before {
     width: 100%;
     order: 1;
     img {
-        max-width: 60px; /* 进一步调整logo的最大宽度为60px */
+        max-width: 44px; /* 进一步调整logo的最大宽度为44px */
         object-fit: cover; /* 去掉阴影效果 */
     }
 }
@@ -139,8 +139,8 @@ h1:before, .anchor:before {
 @include breakpoint($medium) {
     .experience-box-logo {
         justify-content: left;
-        min-width: 60px; /* 进一步调整logo的最小宽度为60px */
-        max-width: 8%; /* 设置logo的最大宽度为10% */
+        min-width: 44px; /* 进一步调整logo的最小宽度为44px */
+        max-width: 6%; /* 设置logo的最大宽度为6% */
         order: 1;
     }
     
@@ -151,5 +151,214 @@ h1:before, .anchor:before {
         order: 2;
         text-align: left; /* 设置文字左对齐 */
         margin: 0; /* 去掉默认的段落间距 */
+    }
+}
+
+/* =========================================================
+   Aesthetic layer — "Video World Model" theme
+   Accent gradient: cyan #00d4ff -> green #00ff88
+   ========================================================= */
+
+$accent-cyan: #00d4ff;
+$accent-green: #00ff88;
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---- Reading typography ---- */
+.page__content {
+    font-size: 1.0em;
+    line-height: 1.6;
+    color: #2c333b;
+
+    p { margin: 0 0 .85em; }
+
+    a {
+        color: #0a7ea8;
+        transition: color .2s ease;
+        &:hover { color: #00b3d6; }
+    }
+}
+
+/* ---- Section headings: clear boundaries between sections ---- */
+.page__content h1 {
+    position: relative;
+    margin: .65em 0 .55em;
+    padding: .45em 0 .35em;
+    border-top: 1px solid rgba(20, 40, 70, 0.08);
+    font-family: "Orbitron", "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 1.85em;
+    letter-spacing: .5px;
+    color: #14243b;
+
+    /* gradient underline (::after keeps the h1::before scroll-offset intact) */
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 66px;
+        height: 4px;
+        border-radius: 4px;
+        background: linear-gradient(90deg, $accent-cyan, $accent-green);
+    }
+}
+
+/* ---- Sub headings ---- */
+.page__content h2 {
+    margin-top: 1.6em;
+    padding-left: .65em;
+    font-weight: 700;
+    font-size: 1.28em;
+    color: #24313f;
+    border-left: 4px solid;
+    border-image: linear-gradient(180deg, $accent-cyan, $accent-green) 1;
+}
+
+/* ---- Publication cards ---- */
+.paper-box {
+    border-bottom: none;
+    margin-bottom: .9em;
+    padding: 1.1em 1.2em;
+    border: 1px solid rgba(20, 40, 70, 0.08);
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(20, 40, 80, 0.05);
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 28px rgba(0, 130, 190, 0.14);
+        border-color: rgba(0, 212, 255, 0.45);
+    }
+
+    .paper-box-image img,
+    video {
+        border-radius: 10px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+        transition: transform .3s ease;
+    }
+
+    &:hover .paper-box-image img,
+    &:hover video {
+        transform: scale(1.02);
+    }
+}
+
+/* ---- Conference badge as gradient pill ---- */
+.badge {
+    padding: 3px 12px;
+    margin-top: .9em;
+    margin-left: .9em;
+    border-radius: 20px;
+    font-size: .72em;
+    font-weight: 600;
+    letter-spacing: .4px;
+    color: #fff;
+    background: linear-gradient(135deg, #0a2540, #12457a);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* ---- Education / internship rows ---- */
+.experience-box {
+    padding: .3em .6em;
+    border-radius: 8px;
+    transition: background .2s ease;
+
+    &:hover {
+        background: linear-gradient(135deg, rgba(0, 212, 255, 0.06), rgba(0, 255, 136, 0.06));
+    }
+
+    .experience-box-text {
+        line-height: 1.4;
+        font-size: .95em;
+    }
+}
+
+/* ---- Top navigation bar (glassmorphism) ---- */
+.masthead {
+    background: rgba(255, 255, 255, 0.82);
+    backdrop-filter: saturate(180%) blur(12px);
+    -webkit-backdrop-filter: saturate(180%) blur(12px);
+    border-bottom: 1px solid rgba(20, 40, 70, 0.08);
+    box-shadow: 0 2px 14px rgba(20, 40, 80, 0.05);
+}
+
+.greedy-nav {
+    background: transparent;
+
+    a {
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        letter-spacing: .2px;
+        color: #2c3a4a;
+        transition: color .2s ease;
+
+        &:hover { color: #0a7ea8; }
+    }
+
+    .visible-links {
+        li:first-child a { font-weight: 700; }
+
+        a::before {
+            height: 3px;
+            border-radius: 3px;
+            background: linear-gradient(90deg, $accent-cyan, $accent-green);
+        }
+    }
+
+    button {
+        background: linear-gradient(135deg, $accent-cyan, $accent-green);
+    }
+}
+
+/* ---- Sidebar / author profile ---- */
+.sidebar {
+    .author__avatar img {
+        border: 3px solid transparent;
+        border-radius: 50%;
+        background: linear-gradient(#fff, #fff) padding-box,
+            linear-gradient(135deg, $accent-cyan, $accent-green) border-box;
+        box-shadow: 0 6px 18px rgba(0, 130, 190, 0.18);
+    }
+
+    .author__name {
+        font-family: "Orbitron", "Inter", sans-serif;
+        font-weight: 700;
+        letter-spacing: .3px;
+        color: #14243b;
+    }
+
+    .author__urls {
+        li { white-space: normal; }
+
+        a {
+            display: flex;
+            align-items: center;
+            padding: 4px 8px;
+            border-radius: 8px;
+            color: #3a4654;
+            font-weight: 500;
+            transition: background .18s ease, color .18s ease, transform .18s ease;
+
+            i {
+                color: $accent-cyan;
+                margin-right: 5px;
+            }
+
+            &:hover {
+                background: linear-gradient(135deg, rgba(0, 212, 255, 0.10), rgba(0, 255, 136, 0.10));
+                color: #0a7ea8;
+                text-decoration: none;
+                transform: translateX(2px);
+            }
+        }
     }
 }
