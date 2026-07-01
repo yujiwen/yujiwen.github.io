@@ -22,21 +22,7 @@ I'm building <span style="font-family: 'Orbitron', sans-serif; font-weight: 600;
 
 🤗 I'm fortunate to have [Yiran Qin](https://iranqin.github.io/) as a close friend and collaborator. We share a deep interest in the intersection of world models and robotics.
 
-🚀 In 2026, I'm working toward releasing this technology as several <strong>open-source projects</strong>.
-
 🤝 <strong>Open to collaborations</strong> from academia, industry, or investment. If you're interested in video world models, let's talk!
-
-<div style="margin: 20px 0; padding: 20px 24px; background: linear-gradient(135deg, #0a0a0a, #1a1a2e); border-radius: 12px; border: 1px solid rgba(0,212,255,0.3); position: relative; overflow: hidden;">
-  <div style="position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, #00d4ff, #00ff88, #00d4ff); background-size: 200% 100%; animation: gradientShift 4s ease infinite;"></div>
-  <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
-    <span style="font-family: 'Orbitron', sans-serif; font-weight: 600; font-size: 1.1em; letter-spacing: 2px; background: linear-gradient(90deg, #00d4ff, #00ff88, #00d4ff); background-size: 200% 100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: gradientShift 4s ease infinite;">VideoWorldModel</span>
-    <span style="background: rgba(0,212,255,0.15); color: #00d4ff; padding: 2px 10px; border-radius: 20px; font-size: 0.78em; font-weight: 500; letter-spacing: 0.5px;">CVPR 2026 Workshop</span>
-  </div>
-  <p style="color: #ccc; font-size: 0.92em; margin: 0 0 12px 0; line-height: 1.6;">
-    We're organizing a workshop on <strong style="color: #fff;">Video World Models</strong> at CVPR 2026. Submissions are welcome across two tracks: <strong style="color: #00d4ff;">Proceedings</strong> and <strong style="color: #00d4ff;">Non-Proceedings</strong>.
-  </p>
-  <a href="https://videoworldmodel-workshop.github.io/" target="_blank" style="display: inline-block; padding: 7px 20px; border: 1px solid #00d4ff; color: #00d4ff; border-radius: 6px; font-size: 0.85em; font-weight: 500; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.background='#00d4ff';this.style.color='#0a0a0a'" onmouseout="this.style.background='transparent';this.style.color='#00d4ff'">Learn More & Submit →</a>
-</div>
 
 <span style="display: inline-block; margin-top: 10px; padding: 8px 16px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 6px;">
   <span style="color: #fff; font-size: 0.9em;">
@@ -46,6 +32,9 @@ I'm building <span style="font-family: 'Orbitron', sans-serif; font-weight: 600;
     <a href="#" onclick="event.preventDefault(); document.getElementById('wechat-qr').style.display='block';" style="color: #fff; text-decoration: underline;">WeChat</a>
   </span>
 </span>
+<a href="https://scholar.google.com.hk/citations?user=uoRPLHIAAAAJ" target="_blank" style="display: inline-block; margin-top: 10px; margin-left: 8px; padding: 8px 16px; background: linear-gradient(135deg, #4285F4 0%, #0F9D58 100%); border-radius: 6px; text-decoration: none; vertical-align: top;">
+  <span style="color: #fff; font-size: 0.9em;">🎓 Google Scholar Citations: <strong id="total_cit">--</strong></span>
+</a>
 
 <!-- Email Modal -->
 <div id="email-modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.5); z-index:9999; text-align:center;">
@@ -98,6 +87,19 @@ My long-term research goal is to build ideal <span style="font-family: 'Orbitron
 
 <!-- Video generation models learn world knowledge from large-scale video data, showing promise in simulating the physical world and even synthesizing novel virtual worlds. I envision video generation models evolving into comprehensive world simulators, with applications spanning gaming, embodied AI, and beyond. -->
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECCV 2026</div><video src='videos/MemLearner.mp4' autoplay loop muted playsinline width="100%"></video></div></div>
+<div class='paper-box-text' markdown="1">
+
+<span style="font-size:1.3em;"><strong>MemLearner: Learning to Query Context Memory for Video World Models</strong></span>
+
+<u><strong>Jiwen Yu</strong></u>, Jianxiong Gao, Jianhong Bai, Yiran Qin, Kaiyi Huang, Quande Liu, Xintao Wang<sup>#</sup>, Pengfei Wan, Kun Gai, Xihui Liu<sup>#</sup>
+
+<span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">ECCV 2026</span>
+
+[**Paper**](https://arxiv.org/pdf/2606.31734) **|** [**Project Page**](https://yujiwen.github.io/memlearner/)
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">SIGGRAPH Asia 2025</div><video src='videos/CaM.mp4' autoplay loop muted playsinline width="100%"></video></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -140,6 +142,19 @@ My long-term research goal is to build ideal <span style="font-family: 'Orbitron
 </div>
 </div>
 
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPRW 2026</div><video src='videos/multiworld.mp4' autoplay loop muted playsinline width="100%"></video></div></div>
+<div class='paper-box-text' markdown="1">
+
+<span style="font-size:1.3em;"><strong>MultiWorld: Scalable Multi-Agent Multi-View Video World Models</strong></span>
+
+Haoyu Wu, <u><strong>Jiwen Yu</strong></u>, Yingtian Zou, Xihui Liu
+
+<span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">CVPR 2026 Workshop MARS-EAI <span style="color: #e74c3c; font-weight: bold;">Best Paper Award</span></span>
+
+[**Paper**](https://arxiv.org/pdf/2604.18564) **|** [**Project Page**](https://multi-world.github.io/)
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2025</div><img src='/images/paper/worldsimbench.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -260,7 +275,7 @@ Yinhuai Wang<sup>*</sup>, <u><strong>Jiwen Yu</strong></u><sup>*</sup>, Jian Zha
         <img src="images/logo/anuttacon_logo.jpg" alt="Anuttacon Logo">
     </div>
     <div class="experience-box-text">
-        <p><strong>2026.01 - Now</strong></p>
+        <p><strong>2026.01 - 2026.06</strong></p>
         <p>Student Researcher at <a href="https://www.anuttacon.com/about/">Anuttacon</a>, Mountain View, CA, US</p>
         <p>Advisor: Dr. <a href="https://scholar.google.com/citations?user=P91a-UQAAAAJ&hl=en">Xin Tong</a></p>
     </div>
@@ -304,6 +319,19 @@ Yinhuai Wang<sup>*</sup>, <u><strong>Jiwen Yu</strong></u><sup>*</sup>, Jian Zha
   - TechBeat. [[Video]](https://www.bilibili.com/video/BV1cy8kzEEtQ/) (Chinese)
 
 <span class='anchor' id='service'></span>
-# Academic Service
+# Academic Service and Honors
+- Invited Outstanding Student Speaker at VALSE 2026 Outstanding Student Forum [[News Report]](https://mp.weixin.qq.com/s/muATsaDvIJb2LcrtcXm8Tg) (Chinese)
 - Primary Organizer, [VideoWorldModel](https://videoworldmodel-workshop.github.io/) (CVPR'26 Workshop)
 - Reviewer, [ICLR](https://iclr.cc/), [NeurIPS](https://neurips.cc/), [ICML](https://icml.cc/), [ECCV](https://eccv.ecva.net/), [CVPR](https://cvpr.thecvf.com/), [ICCV](https://iccv.thecvf.com/), [SIGGRAPH](https://www.siggraph.org/), [SIGGRAPH Asia](https://asia.siggraph.org/), [TPAMI](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34).
+
+<div style="margin: 20px 0; padding: 20px 24px; background: linear-gradient(135deg, #0a0a0a, #1a1a2e); border-radius: 12px; border: 1px solid rgba(0,212,255,0.3); position: relative; overflow: hidden;">
+  <div style="position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, #00d4ff, #00ff88, #00d4ff); background-size: 200% 100%; animation: gradientShift 4s ease infinite;"></div>
+  <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+    <span style="font-family: 'Orbitron', sans-serif; font-weight: 600; font-size: 1.1em; letter-spacing: 2px; background: linear-gradient(90deg, #00d4ff, #00ff88, #00d4ff); background-size: 200% 100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: gradientShift 4s ease infinite;">VideoWorldModel</span>
+    <span style="background: rgba(0,212,255,0.15); color: #00d4ff; padding: 2px 10px; border-radius: 20px; font-size: 0.78em; font-weight: 500; letter-spacing: 0.5px;">CVPR 2026 Workshop</span>
+  </div>
+  <p style="color: #ccc; font-size: 0.92em; margin: 0 0 12px 0; line-height: 1.6;">
+    I served as a Primary Organizer of the <strong style="color: #fff;">Video World Models</strong> workshop at CVPR 2026. The workshop has now concluded — you can revisit the program and accepted works on the workshop website.
+  </p>
+  <a href="https://videoworldmodel-workshop.github.io/" target="_blank" style="display: inline-block; padding: 7px 20px; border: 1px solid #00d4ff; color: #00d4ff; border-radius: 6px; font-size: 0.85em; font-weight: 500; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.background='#00d4ff';this.style.color='#0a0a0a'" onmouseout="this.style.background='transparent';this.style.color='#00d4ff'">View Recap →</a>
+</div>
