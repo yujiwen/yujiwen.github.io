@@ -33,7 +33,7 @@ I'm building <span style="font-family: 'Orbitron', sans-serif; font-weight: 600;
   </span>
 </span>
 <a href="https://scholar.google.com.hk/citations?user=uoRPLHIAAAAJ" target="_blank" style="display: inline-block; margin-top: 10px; margin-left: 8px; padding: 8px 16px; background: linear-gradient(135deg, #4285F4 0%, #0F9D58 100%); border-radius: 6px; text-decoration: none; vertical-align: top;">
-  <span style="color: #fff; font-size: 0.9em;">🎓 Google Scholar Citations: <strong id="total_cit">2395</strong></span>
+  <span style="color: #fff; font-size: 0.9em;">🎓 Google Scholar Citations: <strong id="total_cit">2413</strong></span>
 </a>
 
 <!-- Email Modal -->
@@ -305,6 +305,9 @@ Yinhuai Wang<sup>*</sup>, <u><strong>Jiwen Yu</strong></u><sup>*</sup>, Jian Zha
 
 <span class='anchor' id='talks'></span>
 # Talks
+
+- <span style="background: linear-gradient(135deg, rgba(0,212,255,0.1), rgba(0,255,136,0.1)); padding: 2px 8px; border-radius: 4px; font-size: 0.85em; color: #555;">Jul 2026</span> **Interactive Video Generation towards World Models**
+  - F2S Workshop @ ICML 2026. [[Workshop]](https://icml2026-f2s-workshop.github.io/)
 
 - <span style="background: linear-gradient(135deg, rgba(0,212,255,0.1), rgba(0,255,136,0.1)); padding: 2px 8px; border-radius: 4px; font-size: 0.85em; color: #555;">Dec 2025</span> **Controllable, Generalizable, and Memory-Enabled: Interactive Video World Models**
   - SAAI. [[News Report]](https://mp.weixin.qq.com/s/v5QRFAu5SeodanhqeX1e8Q) (Chinese)
