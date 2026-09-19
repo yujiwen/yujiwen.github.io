@@ -362,3 +362,89 @@ body {
         }
     }
 }
+/* Education logos share a consistent column, including HKU and HKU-MMLab. */
+.education-box {
+    display: grid;
+    grid-template-columns: 164px minmax(0, 1fr);
+    gap: 16px;
+
+    .experience-box-logo {
+        width: 100%;
+        max-width: none;
+        min-width: 0;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+
+        img { width: 44px; height: auto; object-fit: contain; }
+        .mmlab-logo { width: 108px; max-width: 108px; }
+    }
+
+    .experience-box-text { max-width: 100%; padding-left: 0; }
+
+    @media (max-width: 600px) {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 8px;
+    }
+}
+.author__affiliations {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.author__affiliation {
+    font-size: 0.88em;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    line-height: 1.4;
+}
+.author__affiliation-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 22px;
+    width: 22px;
+    height: 20px;
+    overflow: hidden;
+
+    img { display: block; width: 20px; height: 20px; object-fit: contain; }
+}
+.author__affiliation-icon--mmlab {
+    justify-content: flex-start;
+    img { width: auto; max-width: none; height: 18px; flex-shrink: 0; }
+}
+/* Final presentation and small-screen refinements. */
+a:focus-visible, button:focus-visible {
+    outline: 3px solid #0a7ea8;
+    outline-offset: 4px;
+}
+#email-modal, #wechat-qr {
+    overflow-y: auto;
+    padding: 0 16px 24px;
+    > div { max-width: 100%; box-sizing: border-box; }
+    p { overflow-wrap: anywhere; }
+}
+@media (max-width: 600px) {
+    .experience-box:not(.education-box) {
+        display: grid;
+        grid-template-columns: 44px minmax(0, 1fr);
+        align-items: start;
+        gap: 14px;
+        padding: 14px 6px;
+        .experience-box-logo { width: 44px; max-width: 44px; padding-top: 3px; }
+        .experience-box-text { max-width: 100%; padding: 0; }
+    }
+    .paper-box { padding: 1em; }
+    .paper-box-image { margin-top: 12px; }
+    .paper-box-image img, .paper-box-image video { max-width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+    .paper-box:hover, .paper-box:hover img, .paper-box:hover video { transform: none; }
+}

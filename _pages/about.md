@@ -16,24 +16,22 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 <span class='anchor' id='about-me'></span>
-Hi, I'm **Jiwen**, a researcher and frontier explorer in generative AI.
+Hi, I'm **Jiwen**. I'm currently at **Xiaomi Robotics**, working closely with my friend [Yiran Qin](https://iranqin.github.io/).
 
-I'm building <span style="font-family: 'Orbitron', sans-serif; font-weight: 600; letter-spacing: 2px; background: linear-gradient(90deg, #00d4ff, #00ff88, #00d4ff); background-size: 200% 100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: gradientShift 4s ease infinite;">Video World Model</span>: AI systems that generate consistent, controllable video environments with real-time interactivity, memory, and reasoning capabilities. As [Genie 3](https://deepmind.google/blog/genie-3-a-new-frontier-for-world-models/) and [Project Genie](https://labs.google/projectgenie?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content=) have shown, this is the foundation for next-generation simulation, robotics, and interactive media, yet there's still a long way to go.
+My research currently focuses on **robotics**, with a particular emphasis on **foundation models for robotics**.
 
-🤗 I'm fortunate to have [Yiran Qin](https://iranqin.github.io/) as a close friend and collaborator. We share a deep interest in the intersection of world models and robotics.
-
-🤝 <strong>Open to collaborations</strong> from academia, industry, or investment. If you're interested in video world models, let's talk!
+🤝 <strong>Open to collaborations</strong> on robotics and embodied foundation models. If you share these interests, let's talk!
 
 <span style="display: inline-block; margin-top: 10px; padding: 8px 16px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 6px;">
   <span style="color: #fff; font-size: 0.9em;">
-    Contact me via 📬 
-    <a href="#" onclick="event.preventDefault(); document.getElementById('email-modal').style.display='block';" style="color: #fff; text-decoration: underline;">Email</a> 
-    / 
+    Contact me via 📬
+    <a href="#" onclick="event.preventDefault(); document.getElementById('email-modal').style.display='block';" style="color: #fff; text-decoration: underline;">Email</a>
+    /
     <a href="#" onclick="event.preventDefault(); document.getElementById('wechat-qr').style.display='block';" style="color: #fff; text-decoration: underline;">WeChat</a>
   </span>
 </span>
-<a href="https://scholar.google.com.hk/citations?user=uoRPLHIAAAAJ" target="_blank" style="display: inline-block; margin-top: 10px; margin-left: 8px; padding: 8px 16px; background: linear-gradient(135deg, #4285F4 0%, #0F9D58 100%); border-radius: 6px; text-decoration: none; vertical-align: top;">
-  <span style="color: #fff; font-size: 0.9em;">🎓 Google Scholar Citations: <strong id="total_cit">2650</strong></span>
+<a href="https://scholar.google.com.hk/citations?user=uoRPLHIAAAAJ" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin-top: 10px; margin-left: 8px; padding: 8px 16px; background: linear-gradient(135deg, #4285F4 0%, #0F9D58 100%); border-radius: 6px; text-decoration: none; vertical-align: top;">
+  <span style="color: #fff; font-size: 0.9em;">🎓 Google Scholar Citations: <strong id="total_cit">2697</strong></span>
 </a>
 
 <!-- Email Modal -->
@@ -56,36 +54,10 @@ I'm building <span style="font-family: 'Orbitron', sans-serif; font-weight: 600;
   </div>
 </div>
 
-<span class='anchor' id='research-vision'></span>
-# Research Vision
-
-My long-term research goal is to build ideal <span style="font-family: 'Orbitron', sans-serif; font-weight: 600; letter-spacing: 2px; background: linear-gradient(90deg, #00d4ff, #00ff88, #00d4ff); background-size: 200% 100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: gradientShift 4s ease infinite;">Video World Model</span>. I'm currently focused on three core challenges:
-
-<div style="margin: 12px 0; padding: 12px 18px; background: linear-gradient(135deg, rgba(0,212,255,0.08), rgba(0,255,136,0.08)); border-left: 4px solid #00d4ff; border-radius: 8px;">
-⚡ <strong>Real-Time Streaming Generation.</strong> Generating high-quality streaming video with interactive control and memory, which requires substantial engineering and infrastructure work beyond algorithms alone.
-</div>
-
-<div style="margin: 12px 0; padding: 12px 18px; background: linear-gradient(135deg, rgba(102,126,234,0.08), rgba(118,75,162,0.08)); border-left: 4px solid #764ba2; border-radius: 8px;">
-🧠 <strong>Memory Systems.</strong> Building complex, comprehensive memory architectures that integrate diverse tools (context, 3D representations, learnable parameters, etc.) and support a wide range of functions including retrieval, querying, compression, and updates.
-</div>
-
-<div style="margin: 12px 0; padding: 12px 18px; background: linear-gradient(135deg, rgba(255,165,0,0.08), rgba(255,69,0,0.08)); border-left: 4px solid #ff8c00; border-radius: 8px;">
-👁️ <strong>Visual Intelligence.</strong> Can large-scale video training alone give rise to advanced intelligence? Not short-term dynamics prediction, but long-horizon analysis, reasoning, and planning. I believe video data holds great potential for emergent capabilities.
-</div>
-
-<!-- <p align="center">
-  <img src="images/paper/long_term_goal.jpg" alt="My Long Term Research Goal" width="1000"><br>
-</p> -->
-
-
 <span class='anchor' id='publications'></span>
-# Selected Publications 
+# Selected Works
 
 (*: indicates equal contribution; #: indicates corresponding author)
-
-## Research Topics: World Model / Interactive Video Generation / Embodied AI
-
-<!-- Video generation models learn world knowledge from large-scale video data, showing promise in simulating the physical world and even synthesizing novel virtual worlds. I envision video generation models evolving into comprehensive world simulators, with applications spanning gaming, embodied AI, and beyond. -->
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECCV 2026</div><video src='videos/MemLearner.mp4' autoplay loop muted playsinline width="100%"></video></div></div>
 <div class='paper-box-text' markdown="1">
@@ -169,36 +141,6 @@ Yiran Qin<sup>*</sup>, Zhelun Shi<sup>*</sup>, <u><strong>Jiwen Yu</strong></u>,
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2025</div><img src='/images/paper/skillmimic.jpg' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-<span style="font-size:1.3em;"><strong>SkillMimic: Learning Reusable Basketball Skills from Demonstrations</strong></span>
-
-Yinhuai Wang<sup>*</sup>, Qihan Zhao<sup>*</sup>, Runyi Yu<sup>*</sup>, Ailing Zeng, Jing Lin, Zhengyi Luo, Hok Wai Tsui, <u><strong>Jiwen Yu</strong></u>, Xiu Li, Qifeng Chen, Jian Zhang, Lei Zhang, Ping Tan
-
-<span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">CVPR 2025 <span style="color: #e74c3c; font-weight: bold;">Highlight</span></span>
-
-[**Paper**](https://arxiv.org/abs/2408.15270) **|** [**Project Page**](https://ingrid789.github.io/SkillMimic/) **|** [**GitHub**](https://github.com/wyhuai/SkillMimic)
-</div>
-</div>
-
-## Past Research Topic: Training-free Applications of Diffusion Model
-
-My research journey began during my Master's studies, coinciding with the paradigm shift brought by diffusion models in generative AI (2021-2023). This revolutionary advancement inspired my initial research on zero-shot applications of diffusion models, spanning multiple domains including image restoration, generation, editing, steganography, and video synthesis.
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Project</div><img src='/images/paper/animatezero.gif' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-<span style="font-size:1.3em;"><strong>AnimateZero: Video Diffusion Models are Zero-Shot Image Animators</strong></span>
-
-<u><strong>Jiwen Yu</strong></u><sup></sup>, Xiaodong Cun<sup>#</sup>, Chenyang Qi, Yong Zhang, Xintao Wang, Ying Shan, Jian Zhang<sup>#</sup>
-
-<span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">Project 2023</span>
-
-[**Paper**](https://arxiv.org/abs/2312.03793) **|** [**Project Page**](https://yujiwen.github.io/animatezero.github.io/)
-</div>
-</div>
-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2023</div><img src='/images/paper/cross.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -241,25 +183,24 @@ Yinhuai Wang<sup>*</sup>, <u><strong>Jiwen Yu</strong></u><sup>*</sup>, Jian Zha
 
 
 <span class='anchor' id='educations'></span>
-# Educations
+# Education
 
-<div class="experience-box">
+<div class="experience-box education-box">
     <div class="experience-box-logo">
         <img src="images/logo/HKU.jpg" alt="HKU Logo">
+        <img class="mmlab-logo" src="images/logo/HKU_MMLAB_text.png" alt="HKU-MMLab Logo">
     </div>
     <div class="experience-box-text">
-        <p><strong>2024.09 - Now</strong></p>
-        <p>Ph.D. Student, <a href="https://www.hku.hk/">University of Hong Kong</a>, <a href="https://mmlab.hk/">HKU-MMLab</a></p>
+        <p>Ph.D., <a href="https://www.hku.hk/">University of Hong Kong</a>, <a href="https://mmlab.hk/">HKU-MMLab</a></p>
         <p>Advisor: Prof. <a href="https://xh-liu.github.io/">Xihui Liu</a></p>
     </div>
 </div>
 
-<div class="experience-box">
+<div class="experience-box education-box">
     <div class="experience-box-logo">
         <img src="images/logo/pku.svg.png" alt="Peking University Logo">
     </div>
     <div class="experience-box-text">
-        <p><strong>2021.09 - 2024.06</strong></p>
         <p>M.S., <a href="https://english.pku.edu.cn/">Peking University</a>, <a href="https://villa.jianzhang.tech/">VILLA Lab</a></p>
         <p>Advisor: Prof. <a href="https://jianzhang.tech/">Jian Zhang</a></p>
     </div>
@@ -267,8 +208,18 @@ Yinhuai Wang<sup>*</sup>, <u><strong>Jiwen Yu</strong></u><sup>*</sup>, Jian Zha
 
 
 
-<span class='anchor' id='internships'></span>
-# Internships
+<span class='anchor' id='experiences'></span>
+# Experiences
+
+<div class="experience-box">
+    <div class="experience-box-logo">
+        <img src="images/logo/xiaomi.png" alt="Xiaomi Logo">
+    </div>
+    <div class="experience-box-text">
+        <p><strong>2026.09 - Now</strong></p>
+        <p><a href="https://robotics.xiaomi.com/index.html">Xiaomi Robotics</a>, Beijing, China</p>
+    </div>
+</div>
 
 <div class="experience-box">
     <div class="experience-box-logo">
@@ -329,7 +280,7 @@ Yinhuai Wang<sup>*</sup>, <u><strong>Jiwen Yu</strong></u><sup>*</sup>, Jian Zha
 
 <div style="margin: 20px 0; padding: 20px 24px; background: linear-gradient(135deg, #0a0a0a, #1a1a2e); border-radius: 12px; border: 1px solid rgba(0,212,255,0.3); position: relative; overflow: hidden;">
   <div style="position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, #00d4ff, #00ff88, #00d4ff); background-size: 200% 100%; animation: gradientShift 4s ease infinite;"></div>
-  <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+  <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-bottom: 10px;">
     <span style="font-family: 'Orbitron', sans-serif; font-weight: 600; font-size: 1.1em; letter-spacing: 2px; background: linear-gradient(90deg, #00d4ff, #00ff88, #00d4ff); background-size: 200% 100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: gradientShift 4s ease infinite;">VideoWorldModel</span>
     <span style="background: rgba(0,212,255,0.15); color: #00d4ff; padding: 2px 10px; border-radius: 20px; font-size: 0.78em; font-weight: 500; letter-spacing: 0.5px;">CVPR 2026 Workshop</span>
   </div>

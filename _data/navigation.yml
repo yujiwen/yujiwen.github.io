@@ -3,20 +3,17 @@ main:
   - title: "About Me"
     url: "/#about-me"
 
-  - title: "Research Vision"
-    url: "/#research-vision"
-
-  - title: "Publications"
+  - title: "Works"
     url: "/#publications"
 
-  - title: "Educations"
+  - title: "Education"
     url: "/#educations"
 
-  - title: "Internships"
-    url: "/#internships"
+  - title: "Experiences"
+    url: "/#experiences"
 
   - title: "Talks"
     url: "/#talks"
 
-  - title: "Service and Honor"
+  - title: "Service and Honors"
     url: "/#service"

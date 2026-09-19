@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Jiwen Yu"
-description              : "Focused on developing Video World Models."
+description              : "Focus on Foundation Models for Robotics."
 repository               : "yujiwen/yujiwen.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,8 +23,13 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Jiwen Yu"
   avatar           : "images/jiwen-anime.png"
-  bio              : "PhD at HKU-MMLab"
-  location         : "Hong Kong"
+  affiliations:
+    - name: "HKU-MMLab"
+      logo: "images/logo/HKU_MMLAB_text.png"
+      icon_class: "author__affiliation-icon--mmlab"
+    - name: "Xiaomi Robotics"
+      logo: "images/logo/xiaomi.png"
+  location         : "Beijing"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com.hk/citations?user=uoRPLHIAAAAJ"
