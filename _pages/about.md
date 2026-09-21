@@ -31,7 +31,7 @@ My research currently focuses on **robotics**, with a particular emphasis on **f
   </span>
 </span>
 <a href="https://scholar.google.com.hk/citations?user=uoRPLHIAAAAJ" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin-top: 10px; margin-left: 8px; padding: 8px 16px; background: linear-gradient(135deg, #4285F4 0%, #0F9D58 100%); border-radius: 6px; text-decoration: none; vertical-align: top;">
-  <span style="color: #fff; font-size: 0.9em;">🎓 Google Scholar Citations: <strong id="total_cit">2697</strong></span>
+  <span style="color: #fff; font-size: 0.9em;">🎓 Google Scholar Citations: <strong id="total_cit">2701</strong></span>
 </a>
 
 <!-- Email Modal -->
@@ -62,7 +62,7 @@ My research currently focuses on **robotics**, with a particular emphasis on **f
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECCV 2026</div><video src='videos/MemLearner.mp4' autoplay loop muted playsinline width="100%"></video></div></div>
 <div class='paper-box-text' markdown="1">
 
-<span style="font-size:1.3em;"><strong>MemLearner: Learning to Query Context Memory for Video World Models</strong></span>
+<span class="paper-title"><strong>MemLearner: Learning to Query Context Memory for Video World Models</strong></span>
 
 <u><strong>Jiwen Yu</strong></u>, Jianxiong Gao, Jianhong Bai, Yiran Qin, Kaiyi Huang, Quande Liu, Xintao Wang<sup>#</sup>, Pengfei Wan, Kun Gai, Xihui Liu<sup>#</sup>
 
@@ -75,7 +75,7 @@ My research currently focuses on **robotics**, with a particular emphasis on **f
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">SIGGRAPH Asia 2025</div><video src='videos/CaM.mp4' autoplay loop muted playsinline width="100%"></video></div></div>
 <div class='paper-box-text' markdown="1">
 
-<span style="font-size:1.3em;"><strong>Context as Memory: Scene-Consistent Interactive Long Video Generation with Memory Retrieval</strong></span>
+<span class="paper-title"><strong>Context as Memory: Scene-Consistent Interactive Long Video Generation with Memory Retrieval</strong></span>
 
 <u><strong>Jiwen Yu</strong></u><sup></sup>, Jianhong Bai, Yiran Qin, Quande Liu<sup>#</sup>, Xintao Wang, Pengfei Wan, Di Zhang, Xihui Liu<sup>#</sup>
 
@@ -88,7 +88,7 @@ My research currently focuses on **robotics**, with a particular emphasis on **f
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 2025</div><video src='videos/GameFactory.mp4' autoplay loop muted playsinline width="100%"></video></div></div>
 <div class='paper-box-text' markdown="1">
 
-<span style="font-size:1.3em;"><strong>GameFactory: Creating New Games with Generative Interactive Videos</strong></span>
+<span class="paper-title"><strong>GameFactory: Creating New Games with Generative Interactive Videos</strong></span>
 
 <u><strong>Jiwen Yu</strong></u><sup>*</sup>, Yiran Qin<sup>*</sup>, Xintao Wang<sup>#</sup>, Pengfei Wan, Di Zhang, Xihui Liu<sup>#</sup>
 
@@ -102,11 +102,11 @@ My research currently focuses on **robotics**, with a particular emphasis on **f
 <div class='paper-box-text' markdown="1">
 
 
-<span style="font-size:1.3em;"><strong>Survey of Interactive Generative Video</strong></span>
+<span class="paper-title"><strong>Survey of Interactive Generative Video</strong></span>
 
 <u><strong>Jiwen Yu</strong></u><sup>*</sup>, Yiran Qin<sup>*</sup>, Haoxuan Che<sup>*</sup>, Quande Liu<sup>#</sup>, Xintao Wang, Pengfei Wan, Di Zhang, Kun Gai, Hao Chen, Xihui Liu<sup>#</sup>  
 
-<span style="font-size:1.3em;"><strong>Position: Interactive Generative Video as Next-Generation Game Engine</strong></span> 
+<span class="paper-title"><strong>Position: Interactive Generative Video as Next-Generation Game Engine</strong></span>
 
 <u><strong>Jiwen Yu</strong></u><sup>*</sup>, Yiran Qin<sup>*</sup>, Haoxuan Che, Quande Liu, Xintao Wang<sup>#</sup>, Pengfei Wan, Di Zhang, Xihui Liu<sup>#</sup>  
 
@@ -118,7 +118,7 @@ My research currently focuses on **robotics**, with a particular emphasis on **f
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPRW 2026</div><video src='videos/multiworld.mp4' autoplay loop muted playsinline width="100%"></video></div></div>
 <div class='paper-box-text' markdown="1">
 
-<span style="font-size:1.3em;"><strong>MultiWorld: Scalable Multi-Agent Multi-View Video World Models</strong></span>
+<span class="paper-title"><strong>MultiWorld: Scalable Multi-Agent Multi-View Video World Models</strong></span>
 
 Haoyu Wu, <u><strong>Jiwen Yu</strong></u>, Yingtian Zou, Xihui Liu
 
@@ -131,7 +131,7 @@ Haoyu Wu, <u><strong>Jiwen Yu</strong></u>, Yingtian Zou, Xihui Liu
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2025</div><img src='/images/paper/worldsimbench.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-<span style="font-size:1.3em;"><strong>WorldSimBench: Towards Video Generation Models as World Simulators</strong></span>
+<span class="paper-title"><strong>WorldSimBench: Towards Video Generation Models as World Simulators</strong></span>
 
 Yiran Qin<sup>*</sup>, Zhelun Shi<sup>*</sup>, <u><strong>Jiwen Yu</strong></u>, Xijun Wang, Enshen Zhou, Lijun Li, Zhenfei Yin, Xihui Liu, Lu Sheng, Jing Shao, Lei Bai, Wanli Ouyang, Ruimao Zhang
 
@@ -144,7 +144,7 @@ Yiran Qin<sup>*</sup>, Zhelun Shi<sup>*</sup>, <u><strong>Jiwen Yu</strong></u>,
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2023</div><img src='/images/paper/cross.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-<span style="font-size:1.3em;"><strong>CRoSS: Diffusion Model Makes Controllable, Robust and Secure Image Steganography</strong></span>
+<span class="paper-title"><strong>CRoSS: Diffusion Model Makes Controllable, Robust and Secure Image Steganography</strong></span>
 
 <u><strong>Jiwen Yu</strong></u>, Xuanyu Zhang, Youmin Xu, Jian Zhang<sup>#</sup>
 
@@ -157,7 +157,7 @@ Yiran Qin<sup>*</sup>, Zhelun Shi<sup>*</sup>, <u><strong>Jiwen Yu</strong></u>,
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 2023</div><img src='/images/paper/freedom.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-<span style="font-size:1.3em;"><strong>FreeDoM: Training-Free Energy-Guided Conditional Diffusion Model</strong></span>
+<span class="paper-title"><strong>FreeDoM: Training-Free Energy-Guided Conditional Diffusion Model</strong></span>
 
 <u><strong>Jiwen Yu</strong></u>, Yinhuai Wang, Chen Zhao<sup>#</sup>, Bernard Ghanem, Jian Zhang<sup>#</sup>
 
@@ -170,7 +170,7 @@ Yiran Qin<sup>*</sup>, Zhelun Shi<sup>*</sup>, <u><strong>Jiwen Yu</strong></u>,
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR, 2023</div><img src='/images/paper/ddnm.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-<span style="font-size:1.3em;"><strong>Zero-Shot Image Restoration Using Denoising Diffusion Null-Space Model</strong></span>
+<span class="paper-title"><strong>Zero-Shot Image Restoration Using Denoising Diffusion Null-Space Model</strong></span>
 
 
 Yinhuai Wang<sup>*</sup>, <u><strong>Jiwen Yu</strong></u><sup>*</sup>, Jian Zhang<sup>#</sup>

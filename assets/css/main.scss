@@ -41,50 +41,34 @@
 @import "print";
 
 .paper-box {
-    display: flex;
-    justify-content: left;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
     align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    border-bottom: 1px #efefef solid;
-    padding: 2em 0 2em 0;
-    
+    gap: 14px;
 
-    .paper-box-image{
-        justify-content: center;
+    .paper-box-image {
         display: flex;
-        width: 100%;
+        justify-content: center;
+        min-width: 0;
         order: 2;
-        img {
-            max-width: 300px;
-            box-shadow: 3px 3px 6px #888;
-            object-fit: cover;
-        }
+        > div { position: relative; width: 100%; max-width: 220px; }
+        img, video { display: block; width: 100%; max-width: 100%; height: auto; }
     }
-    
-    .paper-box-text{
-        max-width: 100%;
+    .paper-box-text {
+        min-width: 0;
         order: 1;
+        font-size: .92em;
+        line-height: 1.5;
+        p { margin: 0 0 .55em; }
+        p:last-child { margin-bottom: 0; }
+        .paper-title { display: block; font-size: 1.2em; line-height: 1.4; }
     }
-    
     @include breakpoint($medium) {
-        .paper-box-image{
-            justify-content: left;
-            min-width: 160px;
-            max-width: 32%;
-            order: 1;
-        }
-        
-        .paper-box-text{
-            justify-content: left;
-            padding-left: 1.6em;
-            max-width: 68%;
-            order: 2;
-        }
-
+        grid-template-columns: minmax(140px, 24%) minmax(0, 1fr);
+        gap: 20px;
+        .paper-box-image { order: 1; }
+        .paper-box-text { order: 2; }
     }
-
-
 }
 
 $scroll_offset : 2em;
@@ -225,8 +209,8 @@ body {
 /* ---- Publication cards ---- */
 .paper-box {
     border-bottom: none;
-    margin-bottom: .9em;
-    padding: 1.1em 1.2em;
+    margin-bottom: .7em;
+    padding: .85em 1em;
     border: 1px solid rgba(20, 40, 70, 0.08);
     border-radius: 14px;
     background: #fff;
@@ -437,7 +421,7 @@ a:focus-visible, button:focus-visible {
         .experience-box-text { max-width: 100%; padding: 0; }
     }
     .paper-box { padding: 1em; }
-    .paper-box-image { margin-top: 12px; }
+    .paper-box-image { margin-top: 0; }
     .paper-box-image img, .paper-box-image video { max-width: 100%; }
 }
 @media (prefers-reduced-motion: reduce) {
