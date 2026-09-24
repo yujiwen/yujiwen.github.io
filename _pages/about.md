@@ -31,7 +31,7 @@ My research currently focuses on **robotics**, with a particular emphasis on **f
   </span>
 </span>
 <a href="https://scholar.google.com.hk/citations?user=uoRPLHIAAAAJ" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin-top: 10px; margin-left: 8px; padding: 8px 16px; background: linear-gradient(135deg, #4285F4 0%, #0F9D58 100%); border-radius: 6px; text-decoration: none; vertical-align: top;">
-  <span style="color: #fff; font-size: 0.9em;">🎓 Google Scholar Citations: <strong id="total_cit">2701</strong></span>
+  <span style="color: #fff; font-size: 0.9em;">🎓 Google Scholar Citations: <strong id="total_cit">2713</strong></span>
 </a>
 
 <!-- Email Modal -->
@@ -98,19 +98,16 @@ My research currently focuses on **robotics**, with a particular emphasis on **f
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/paper/igv_survey.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2026</div><img src='images/paper/igv_survey.jpg' alt="Interactive Generative Video" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-
-<span class="paper-title"><strong>Survey of Interactive Generative Video</strong></span>
-
-<u><strong>Jiwen Yu</strong></u><sup>*</sup>, Yiran Qin<sup>*</sup>, Haoxuan Che<sup>*</sup>, Quande Liu<sup>#</sup>, Xintao Wang, Pengfei Wan, Di Zhang, Kun Gai, Hao Chen, Xihui Liu<sup>#</sup>  
-
-<span class="paper-title"><strong>Position: Interactive Generative Video as Next-Generation Game Engine</strong></span>
+<span class="paper-title"><strong>Position: Next-Generation Game Engines Should Be Built on Interactive Generative Video</strong></span>
 
 <u><strong>Jiwen Yu</strong></u><sup>*</sup>, Yiran Qin<sup>*</sup>, Haoxuan Che, Quande Liu, Xintao Wang<sup>#</sup>, Pengfei Wan, Di Zhang, Xihui Liu<sup>#</sup>  
 
-[**Survey Paper**](https://arxiv.org/abs/2504.21853) | [**Position Paper**](https://arxiv.org/abs/2503.17359)
+<span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">NeurIPS 2026</span>
+
+[**Paper**](https://arxiv.org/abs/2503.17359)
 </div>
 </div>
 
