@@ -3,6 +3,7 @@ permalink: /
 title: ""
 excerpt: ""
 author_profile: true
+mathjax: false
 redirect_from: 
   - /about/
   - /about.html
@@ -53,7 +54,7 @@ My research currently focuses on **robotics**, with a particular emphasis on **f
   <button type="button" class="contact-dialog__close" data-dialog-close aria-label="Close WeChat dialog" autofocus>&times;</button>
   <span class="contact-dialog__eyebrow">WECHAT</span>
   <h2 id="wechat-heading" class="contact-dialog__heading">Scan to connect.</h2>
-  <div class="contact-dialog__qr"><img src="images/wechat_qr.jpg" alt="WeChat QR Code" width="220"></div>
+  <div class="contact-dialog__qr"><img data-src="images/wechat_qr.jpg" alt="WeChat QR Code" width="1083" height="1464" decoding="async"></div>
   <p class="contact-dialog__description">Please tell me your name and affiliation (current or past) when adding my WeChat. Thanks!</p>
 </dialog>
 
@@ -62,7 +63,7 @@ My research currently focuses on **robotics**, with a particular emphasis on **f
 
 (*: indicates equal contribution; #: indicates corresponding author)
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECCV 2026</div><video src='videos/MemLearner.mp4' autoplay loop muted playsinline width="100%"></video></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECCV 2026</div><video class="paper-video" data-src="videos/MemLearner.mp4" preload="none" poster="images/optimized/MemLearner-poster.webp" loop muted playsinline width="640" height="352"></video></div></div>
 <div class='paper-box-text' markdown="1">
 
 <span class="paper-title"><strong>MemLearner: Learning to Query Context Memory for Video World Models</strong></span>
@@ -75,7 +76,7 @@ My research currently focuses on **robotics**, with a particular emphasis on **f
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">SIGGRAPH Asia 2025</div><video src='videos/CaM.mp4' autoplay loop muted playsinline width="100%"></video></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">SIGGRAPH Asia 2025</div><video class="paper-video" data-src="videos/CaM.mp4" preload="none" poster="images/optimized/CaM-poster.webp" loop muted playsinline width="640" height="360"></video></div></div>
 <div class='paper-box-text' markdown="1">
 
 <span class="paper-title"><strong>Context as Memory: Scene-Consistent Interactive Long Video Generation with Memory Retrieval</strong></span>
@@ -88,7 +89,7 @@ My research currently focuses on **robotics**, with a particular emphasis on **f
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 2025</div><video src='videos/GameFactory.mp4' autoplay loop muted playsinline width="100%"></video></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 2025</div><video class="paper-video" data-src="videos/GameFactory.mp4" preload="none" poster="images/optimized/GameFactory-poster.webp" loop muted playsinline width="640" height="352"></video></div></div>
 <div class='paper-box-text' markdown="1">
 
 <span class="paper-title"><strong>GameFactory: Creating New Games with Generative Interactive Videos</strong></span>
@@ -101,7 +102,7 @@ My research currently focuses on **robotics**, with a particular emphasis on **f
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2026</div><img src='images/paper/igv_survey.jpg' alt="Interactive Generative Video" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2026</div><img src="images/optimized/igv_survey-640.webp" srcset="images/optimized/igv_survey-320.webp 320w, images/optimized/igv_survey-640.webp 640w, images/optimized/igv_survey-960.webp 960w" sizes="220px" loading="lazy" decoding="async" alt="Interactive Generative Video" width="640" height="264"></div></div>
 <div class='paper-box-text' markdown="1">
 
 <span class="paper-title"><strong>Position: Next-Generation Game Engines Should Be Built on Interactive Generative Video</strong></span>
@@ -115,7 +116,7 @@ My research currently focuses on **robotics**, with a particular emphasis on **f
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPRW 2026</div><video src='videos/multiworld.mp4' autoplay loop muted playsinline width="100%"></video></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPRW 2026</div><video class="paper-video" data-src="videos/multiworld.mp4" preload="none" poster="images/optimized/multiworld-poster.webp" loop muted playsinline width="640" height="320"></video></div></div>
 <div class='paper-box-text' markdown="1">
 
 <span class="paper-title"><strong>MultiWorld: Scalable Multi-Agent Multi-View Video World Models</strong></span>
@@ -128,7 +129,7 @@ Haoyu Wu, <u><strong>Jiwen Yu</strong></u>, Yingtian Zou, Xihui Liu
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2025</div><img src='/images/paper/worldsimbench.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2025</div><img src="images/optimized/worldsimbench-640.webp" srcset="images/optimized/worldsimbench-320.webp 320w, images/optimized/worldsimbench-640.webp 640w, images/optimized/worldsimbench-960.webp 960w" sizes="220px" loading="lazy" decoding="async" alt="sym" width="640" height="384"></div></div>
 <div class='paper-box-text' markdown="1">
 
 <span class="paper-title"><strong>WorldSimBench: Towards Video Generation Models as World Simulators</strong></span>
@@ -141,7 +142,7 @@ Yiran Qin<sup>*</sup>, Zhelun Shi<sup>*</sup>, <u><strong>Jiwen Yu</strong></u>,
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2023</div><img src='/images/paper/cross.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2023</div><img src="images/optimized/cross-640.webp" srcset="images/optimized/cross-320.webp 320w, images/optimized/cross-640.webp 640w, images/optimized/cross-960.webp 960w" sizes="220px" loading="lazy" decoding="async" alt="sym" width="640" height="342"></div></div>
 <div class='paper-box-text' markdown="1">
 
 <span class="paper-title"><strong>CRoSS: Diffusion Model Makes Controllable, Robust and Secure Image Steganography</strong></span>
@@ -154,7 +155,7 @@ Yiran Qin<sup>*</sup>, Zhelun Shi<sup>*</sup>, <u><strong>Jiwen Yu</strong></u>,
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 2023</div><img src='/images/paper/freedom.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 2023</div><img src="images/optimized/freedom-640.webp" srcset="images/optimized/freedom-320.webp 320w, images/optimized/freedom-640.webp 640w, images/optimized/freedom-960.webp 960w" sizes="220px" loading="lazy" decoding="async" alt="sym" width="640" height="397"></div></div>
 <div class='paper-box-text' markdown="1">
 
 <span class="paper-title"><strong>FreeDoM: Training-Free Energy-Guided Conditional Diffusion Model</strong></span>
@@ -167,7 +168,7 @@ Yiran Qin<sup>*</sup>, Zhelun Shi<sup>*</sup>, <u><strong>Jiwen Yu</strong></u>,
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR, 2023</div><img src='/images/paper/ddnm.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR, 2023</div><img src="images/optimized/ddnm-640.webp" srcset="images/optimized/ddnm-320.webp 320w, images/optimized/ddnm-640.webp 640w, images/optimized/ddnm-960.webp 960w" sizes="220px" loading="lazy" decoding="async" alt="sym" width="640" height="360"></div></div>
 <div class='paper-box-text' markdown="1">
 
 <span class="paper-title"><strong>Zero-Shot Image Restoration Using Denoising Diffusion Null-Space Model</strong></span>
@@ -187,7 +188,7 @@ Yinhuai Wang<sup>*</sup>, <u><strong>Jiwen Yu</strong></u><sup>*</sup>, Jian Zha
 
 <div class="experience-box education-box">
     <div class="experience-box-logo">
-        <img src="images/logo/HKU.png" alt="HKU Logo">
+        <img src="images/logo/HKU.png" alt="HKU Logo" loading="lazy" decoding="async">
         <img class="mmlab-logo" src="images/logo/HKU_MMLAB_text.png" alt="HKU-MMLab Logo">
     </div>
     <div class="experience-box-text">
@@ -198,7 +199,7 @@ Yinhuai Wang<sup>*</sup>, <u><strong>Jiwen Yu</strong></u><sup>*</sup>, Jian Zha
 
 <div class="experience-box education-box">
     <div class="experience-box-logo">
-        <img src="images/logo/pku.svg.png" alt="Peking University Logo">
+        <img src="images/logo/pku.svg.png" alt="Peking University Logo" loading="lazy" decoding="async">
     </div>
     <div class="experience-box-text">
         <p>M.S., <a href="https://english.pku.edu.cn/">Peking University</a>, <a href="https://villa.jianzhang.tech/">VILLA Lab</a></p>
@@ -213,7 +214,7 @@ Yinhuai Wang<sup>*</sup>, <u><strong>Jiwen Yu</strong></u><sup>*</sup>, Jian Zha
 
 <div class="experience-box">
     <div class="experience-box-logo">
-        <img src="images/logo/xiaomi.png" alt="Xiaomi Logo">
+        <img src="images/logo/xiaomi.png" alt="Xiaomi Logo" loading="lazy" decoding="async">
     </div>
     <div class="experience-box-text">
         <p><strong>2026.09 - Now</strong></p>
@@ -223,7 +224,7 @@ Yinhuai Wang<sup>*</sup>, <u><strong>Jiwen Yu</strong></u><sup>*</sup>, Jian Zha
 
 <div class="experience-box">
     <div class="experience-box-logo">
-        <img src="images/logo/anuttacon_logo.png" alt="Anuttacon Logo">
+        <img src="images/logo/anuttacon_logo.png" alt="Anuttacon Logo" loading="lazy" decoding="async">
     </div>
     <div class="experience-box-text">
         <p><strong>2026.01 - 2026.06</strong></p>
@@ -234,7 +235,7 @@ Yinhuai Wang<sup>*</sup>, <u><strong>Jiwen Yu</strong></u><sup>*</sup>, Jian Zha
 
 <div class="experience-box">
     <div class="experience-box-logo">
-        <img src="images/logo/kuaishou.png" alt="Kuaishou Technology Logo">
+        <img src="images/logo/kuaishou.png" alt="Kuaishou Technology Logo" loading="lazy" decoding="async">
     </div>
     <div class="experience-box-text">
         <p><strong>2024.09 - 2026.01</strong></p>
@@ -245,7 +246,7 @@ Yinhuai Wang<sup>*</sup>, <u><strong>Jiwen Yu</strong></u><sup>*</sup>, Jian Zha
 
 <div class="experience-box">
     <div class="experience-box-logo">
-        <img src="images/logo/tencent_ai_lab.png" alt="Tencent AI Lab Logo">
+        <img src="images/logo/tencent_ai_lab.png" alt="Tencent AI Lab Logo" loading="lazy" decoding="async">
     </div>
     <div class="experience-box-text">
         <p><strong>2023.04 - 2024.01</strong></p>

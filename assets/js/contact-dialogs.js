@@ -8,6 +8,9 @@
       event.preventDefault();
       const status = dialog.querySelector('[role="status"]');
       if (status) status.textContent = '';
+      dialog.querySelectorAll('img[data-src]').forEach(image => {
+        if (!image.getAttribute('src')) image.src = image.dataset.src;
+      });
       dialog.showModal();
       document.documentElement.classList.add('contact-dialog-open');
     });

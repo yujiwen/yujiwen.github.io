@@ -46,12 +46,12 @@
     play();
   }
 
-  // Let the page's own CSS, fonts and images land first; the clip is decoration
-  // and must not compete with them for bandwidth.
-  if (document.readyState === 'complete') {
-    start();
+  // The deferred script runs after HTML parsing. Unrelated image or external
+  // script requests must not keep the hand frozen until the window load event.
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', start, { once: true });
   } else {
-    window.addEventListener('load', start, { once: true });
+    start();
   }
 
   // Never decode frames nobody is looking at.

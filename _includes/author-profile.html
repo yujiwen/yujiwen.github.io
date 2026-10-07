@@ -5,7 +5,11 @@
 <div itemscope itemtype="http://schema.org/Person" class="profile_box">
 
   <div class="author__avatar">
+    {% if author.avatar == 'images/jiwen-anime.png' %}
+    <img src="{{ '/images/optimized/avatar-352.webp' | relative_url }}" srcset="{{ '/images/optimized/avatar-176.webp' | relative_url }} 176w, {{ '/images/optimized/avatar-352.webp' | relative_url }} 352w, {{ '/images/optimized/avatar-528.webp' | relative_url }} 528w" sizes="(min-width: 925px) 175px, 84px" width="352" height="437" fetchpriority="high" class="author__avatar" alt="{{ author.name }}">
+    {% else %}
     <img src="{{ author.avatar }}" class="author__avatar" alt="{{ author.name }}">
+    {% endif %}
   </div>
 
   <div class="author__content">

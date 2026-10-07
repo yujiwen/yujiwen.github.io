@@ -1,7 +1,8 @@
 <script src="assets/js/main.min.js"></script>
 {% if page.url == '/' %}
-<script src="assets/js/background-video.js" defer></script>
-<script src="assets/js/contact-dialogs.js" defer></script>
+<script src="{{ '/assets/js/background-video.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
+<script src="{{ '/assets/js/contact-dialogs.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
+<script src="{{ '/assets/js/homepage-media.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
 {% endif %}
 
 {% include analytics.html %}
