@@ -9,7 +9,9 @@ layout: compress
     {% include head/custom.html %}
   </head>
 
-  <body>
+  <body{% if page.url == '/' %} class="robotics-home"{% endif %}>
+
+    {% if page.url == '/' %}{% include robotics-background.html %}{% endif %}
 
     {% include browser-upgrade.html %}
     {% include masthead.html %}

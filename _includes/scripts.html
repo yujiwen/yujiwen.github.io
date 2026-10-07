@@ -1,4 +1,8 @@
 <script src="assets/js/main.min.js"></script>
+{% if page.url == '/' %}
+<script src="assets/js/background-video.js" defer></script>
+<script src="assets/js/contact-dialogs.js" defer></script>
+{% endif %}
 
 {% include analytics.html %}
 {% include fetch_google_scholar_stats.html %}

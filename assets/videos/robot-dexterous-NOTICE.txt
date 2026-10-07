@@ -1,0 +1,14 @@
+Shadow Hand E3M5 model: Shadow Robot Company.
+MJCF conversion and mesh processing: Google DeepMind MuJoCo Menagerie contributors.
+Source revision: f054586a8e90465d49ee5be15335c4a0c7f57caf
+https://github.com/google-deepmind/mujoco_menagerie/tree/f054586a8e90465d49ee5be15335c4a0c7f57caf/shadow_hand
+
+Model supplied under Apache License 2.0.
+Full license is included at /docs/third-party/shadow-hand-LICENSE.txt.
+
+The portfolio's robot-dexterous and robot-precision MP4/JPEG files are rendered
+derivatives. Changes include materials, lighting, camera and independently
+authored finger/thumb/wrist animation. robot-precision also replaces forearm
+and wrist visual geometry with authored curved casing and joint hardware;
+the original hand meshes and joint hierarchy are retained.
+See /docs/background-footage.txt.

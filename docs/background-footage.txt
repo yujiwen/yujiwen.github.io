@@ -1,0 +1,49 @@
+Homepage background animation (local update, 2026-10-07)
+
+Current source: Shadow Hand E3M5 model, originally provided by Shadow Robot
+Company and converted to MJCF in Google DeepMind MuJoCo Menagerie.
+Model revision: f054586a8e90465d49ee5be15335c4a0c7f57caf
+https://github.com/google-deepmind/mujoco_menagerie/tree/f054586a8e90465d49ee5be15335c4a0c7f57caf/shadow_hand
+Model license: Apache-2.0; complete copy in third-party/shadow-hand-LICENSE.txt.
+
+Custom changes: studio lighting, black/silver materials, camera composition,
+an authored smooth forearm and wrist hardware, and an 18-second animation.
+Original forearm/wrist visual meshes are replaced by a tapered curved shell,
+inset panels, ventilation slots, turned collars, fasteners and two-axis bearing
+hardware. The original palm, finger meshes and joint transforms are retained.
+The accepted finger/thumb/wrist motion definition is unchanged.
+Index, middle, ring
+and little fingers have different continuous trajectories at three flexion
+joints each, with small independent abduction. The thumb and wrist also move.
+Sequence: staggered finger flex, traveling wave, contrasting finger pairs,
+staggered release. These are rendered model movements, not edited live footage.
+Animation was checked for joint limits, independent digit movement and a
+matching first/last pose. Both video exports were fully decoded without errors.
+
+Current exports: robot-precision-loop.mp4 (1600x900),
+robot-precision-loop-sm.mp4 (1100x618), and robot-precision-poster.jpg.
+24 fps, no audio. Prior robot-dexterous*, robot-hand-motion*, robot-hand-loop* and hand-* assets
+are preserved. The preceding live-action source was Pexels video 6153464:
+https://videos.pexels.com/video-files/6153464/6153464-uhd_4096_2160_25fps.mp4
+Warm monochrome, lifted blacks, vertical flip and grain are applied in CSS,
+including to the static fallback. Grain is confined to the background layer.
+Desktop only (925px and wider): footage and still translate left using
+calc(max(16px, (100vw - 1280px) / 2) + 200px - 60vw).
+The rightmost 16% of the video element fades into the studio base color.
+This anchors the hand just right of the avatar while cropping more forearm; animation
+and video assets are unchanged. Narrow/mobile framing retains its prior crop.
+
+Paper cards: white alpha .18 desktop, .36 on small screens, .30 on hover.
+The parent page panel and sidebar opacity are unchanged.
+Workshop recap: dark navy/indigo/teal glass (alpha .82-.85 desktop,
+.87-.89 small screens), 10px blur and a fine colored upper highlight.
+Foreground: lime/mint/cyan gradient heading with a soft green glow,
+light body text, white emphasis, mint badge and luminous mint button label
+on dark teal glass, with a light focus outline.
+All recap content and the destination link are preserved.
+The monochrome filter now uses contrast .60 / brightness 1.25 and a lighter
+central white wash, for slightly clearer mechanical detail.
+Contact controls open native modal dialogs in the browser top layer, with
+full-viewport dimming, centering, scroll locking and keyboard focus handling.
+Mobile profile: avatar and affiliations share a grid row; labeled social
+links sit on a separate row with a divider and consistent spacing.

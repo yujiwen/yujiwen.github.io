@@ -1,0 +1,356 @@
+/* The hand footage is a page background; the established layout stays intact.
+   Its studio backdrop is a flat light grey, which is what makes it possible to
+   let every surface below sit *on* the image instead of hiding it. */
+
+.robotics-home { isolation: isolate; background: #eeece8; }
+
+.robotics-background {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+    background: #eeece8;
+
+    &__still,
+    &__video {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+        display: block;
+        /* Match the reference's warm, faded monochrome. The grade and flip
+           also apply to the still used for reduced motion and failed playback. */
+        filter: grayscale(1) contrast(.60) brightness(1.25) sepia(.04);
+        transform: scaleY(-1);
+    }
+    &__video {
+        opacity: 0;
+        transition: opacity 1.4s ease;
+    }
+    &.scene-ready &__video { opacity: 1; }
+    &.scene-still &__video { opacity: 0; }
+}
+
+/* Desktop: place the hand near the middle and crop more of the forearm.
+   The studio backdrop fades into the base color at the exposed right edge. */
+@media (min-width: 925px) {
+    .robotics-background__still,
+    .robotics-background__video {
+        /* Anchor the hand just right of the avatar, including wide monitors. */
+        transform: translateX(calc(max(16px, (100vw - 1280px) / 2) + 200px - 60vw)) scaleY(-1);
+        mask-image: linear-gradient(to right, #000 84%, transparent 100%);
+        -webkit-mask-image: linear-gradient(to right, #000 84%, transparent 100%);
+    }
+}
+
+/* The grain lives inside the background stacking context, below all UI. */
+.robotics-background__grain {
+    position: absolute;
+    inset: -180px;
+    background-image: url('../images/film-grain.svg');
+    background-size: 180px 180px;
+    opacity: .22;
+    mix-blend-mode: soft-light;
+    animation: robotics-film-grain .8s steps(1) infinite;
+}
+
+@keyframes robotics-film-grain {
+    0%, 100% { transform: translate(0, 0); }
+    25% { transform: translate(-43px, 29px); }
+    50% { transform: translate(37px, -53px); }
+    75% { transform: translate(-19px, -17px); }
+}
+
+/* Lift the middle behind the text without obscuring the mechanical fingers. */
+.robotics-background__wash {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 62% 78% at 50% 46%, rgba(255,255,255,.36), rgba(255,255,255,.06) 62%, rgba(255,255,255,0) 100%);
+}
+
+/* ---- Surfaces become translucent, so the background reads through them ---- */
+.robotics-home {
+    /* The outer panes retain enough opacity to keep text easy to read. */
+    .page__content,
+    .sidebar {
+        border-radius: 12px;
+        background: rgba(255, 255, 255, .58);
+        backdrop-filter: blur(16px) saturate(120%);
+        -webkit-backdrop-filter: blur(16px) saturate(120%);
+        box-shadow: 0 16px 44px rgba(16, 38, 54, .07);
+    }
+    .page__content { padding: 20px 24px; }
+    .sidebar { padding: 14px 16px; }
+
+    /* Top bar: was nearly opaque, which cut the footage off in a hard band. */
+    .masthead {
+        background: rgba(255, 255, 255, .50);
+        backdrop-filter: blur(18px) saturate(150%);
+        -webkit-backdrop-filter: blur(18px) saturate(150%);
+        border-bottom: 1px solid rgba(20, 40, 70, .07);
+        box-shadow: 0 1px 18px rgba(20, 40, 80, .05);
+    }
+
+    /* Work cards were solid #fff blocks. */
+    .paper-box {
+        background: rgba(255, 255, 255, .18);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-color: rgba(20, 40, 70, .10);
+        box-shadow: 0 4px 18px rgba(20, 40, 80, .07);
+
+        &:hover {
+            background: rgba(255, 255, 255, .30);
+            box-shadow: 0 12px 30px rgba(0, 130, 190, .16);
+        }
+    }
+
+    /* The two hero pills were solid gradients that punched a hole in the page. */
+    .page__content a[href*="scholar.google"],
+    .page__content span[style*="667eea"] {
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+        box-shadow: 0 4px 16px rgba(20, 40, 80, .18);
+    }
+
+}
+
+/* Small screens have no room for a see-through column, so bring back real
+   opacity — legibility wins over the effect. */
+@media (max-width: 924px) {
+    .robotics-background {
+        &__still,
+        &__video { object-position: 65% 40%; }
+        &.scene-ready &__video { opacity: .95; }
+        &.scene-still &__video { opacity: 0; }
+    }
+    .robotics-background__wash {
+        background: linear-gradient(180deg, rgba(255,255,255,.28), rgba(255,255,255,.52));
+    }
+    .robotics-home {
+        .page__content,
+        .sidebar { background: rgba(255, 255, 255, .74); }
+        .paper-box { background: rgba(255, 255, 255, .36); }
+        .masthead { background: rgba(255, 255, 255, .68); }
+    }
+}
+
+/* Dark translucent glass with luminous foreground elements. */
+.workshop-recap {
+    position: relative;
+    overflow: hidden;
+    margin: 24px 0 4px;
+    padding: 22px 24px;
+    border-radius: 14px;
+    border: 1px solid rgba(142, 217, 238, .27);
+    background: linear-gradient(120deg, rgba(10, 22, 37, .85), rgba(22, 19, 43, .82) 52%, rgba(9, 36, 40, .84));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: inset 0 1px 0 rgba(214, 245, 255, .14), 0 12px 32px rgba(9, 24, 43, .18);
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0 0 auto;
+        height: 2px;
+        background: linear-gradient(90deg, rgba(0, 183, 228, .75), rgba(153, 107, 223, .70), rgba(31, 195, 139, .65));
+    }
+    &__heading {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px 14px;
+        margin-bottom: 12px;
+    }
+    &__title {
+        font-family: 'Orbitron', sans-serif;
+        font-weight: 700;
+        font-size: 1.05em;
+        letter-spacing: 1px;
+        color: #b8ffd8;
+        background: linear-gradient(105deg, #e1ffb9, #7effbe 55%, #88eaff);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: drop-shadow(0 0 7px rgba(94, 255, 181, .36));
+    }
+    &__badge {
+        padding: 3px 10px;
+        border: 1px solid rgba(157, 222, 239, .24);
+        border-radius: 20px;
+        background: rgba(148, 210, 237, .08);
+        color: #bdffe0;
+        text-shadow: 0 0 10px rgba(99, 255, 189, .45);
+        font-size: .76em;
+        font-weight: 500;
+        letter-spacing: .4px;
+    }
+    p {
+        margin: 0 0 16px;
+        font-size: .92em;
+        line-height: 1.7;
+        color: #eaf1fc;
+    }
+    strong { color: #fff; }
+    &__link {
+        display: inline-block;
+        padding: 8px 18px;
+        border: 1px solid rgba(123, 255, 195, .55);
+        border-radius: 7px;
+        background: linear-gradient(135deg, rgba(26, 79, 66, .90), rgba(19, 48, 62, .95));
+        color: #c6ffdb !important;
+        text-shadow: 0 0 8px rgba(91, 255, 173, .58), 0 0 20px rgba(91, 255, 173, .24);
+        box-shadow: inset 0 0 12px rgba(81, 255, 175, .06), 0 0 16px rgba(81, 255, 175, .13);
+        font-size: .85em;
+        font-weight: 600;
+        text-decoration: none !important;
+        transition: background .2s ease, box-shadow .2s ease;
+        &:hover {
+            background: linear-gradient(135deg, rgba(37, 103, 82, .95), rgba(23, 69, 78, .98));
+            box-shadow: 0 0 22px rgba(81, 255, 175, .30);
+        }
+        &:focus-visible { outline: 2px solid #d3faff; outline-offset: 4px; }
+    }
+    @media (max-width: 924px) {
+        background: linear-gradient(120deg, rgba(10, 22, 37, .89), rgba(22, 19, 43, .87) 52%, rgba(9, 36, 40, .88));
+    }
+    @media (max-width: 600px) { padding: 20px; }
+}
+
+/* Native dialogs use the browser top layer, outside the glass panes' bounds. */
+.contact-trigger { padding: 0; border: 0; background: transparent; color: inherit; font: inherit; text-decoration: underline; cursor: pointer; }
+html.contact-dialog-open { overflow: hidden; }
+.robotics-home .contact-dialog {
+    box-sizing: border-box;
+    width: calc(100% - 32px);
+    max-width: 520px;
+    max-height: calc(100% - 32px);
+    max-height: calc(100dvh - 32px);
+    margin: auto;
+    padding: 34px 32px 24px;
+    overflow-y: auto;
+    border: 1px solid rgba(168, 227, 213, .75);
+    border-radius: 22px;
+    background: linear-gradient(145deg, rgba(255, 255, 255, .98), rgba(231, 246, 242, .97));
+    box-shadow: 0 28px 90px rgba(2, 17, 28, .32), inset 0 1px 0 #fff;
+    color: #19313c;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    &::backdrop {
+        background: rgba(13, 21, 30, .58);
+        backdrop-filter: blur(6px) grayscale(.9);
+        -webkit-backdrop-filter: blur(6px) grayscale(.9);
+    }
+    &__close {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        width: 34px;
+        height: 34px;
+        padding: 0;
+        border: 1px solid rgba(32, 80, 76, .12);
+        border-radius: 50%;
+        background: rgba(255, 255, 255, .7);
+        color: #31575c;
+        font: 24px/1 'Inter', sans-serif;
+        cursor: pointer;
+        &:hover { background: #def4eb; }
+    }
+    &__eyebrow {
+        display: block;
+        margin-bottom: 12px;
+        color: #287d70;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 2.4px;
+    }
+    .contact-dialog__heading {
+        margin: 0 0 12px;
+        padding: 0;
+        border: 0;
+        font: 650 27px/1.25 'Inter', sans-serif;
+        letter-spacing: -.7px;
+        color: #19313c;
+        &::before, &::after { display: none; }
+    }
+    .contact-dialog__description { margin: 0; color: #50666e; font-size: 14px; line-height: 1.7; }
+    .contact-dialog__address {
+        margin: 24px 0;
+        padding: 16px 12px;
+        border: 1px solid rgba(55, 122, 110, .16);
+        border-radius: 12px;
+        background: rgba(255, 255, 255, .78);
+        font-size: 19px;
+        font-weight: 600;
+        letter-spacing: -.3px;
+        overflow-wrap: anywhere;
+        user-select: all;
+    }
+    &__actions { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 12px 18px; }
+    &__copy {
+        padding: 11px 18px;
+        border: 1px solid rgba(54, 157, 120, .35);
+        border-radius: 9px;
+        background: linear-gradient(120deg, #a8f0c6, #9fe5e5);
+        color: #173e37;
+        font: 600 14px/1.4 'Inter', sans-serif;
+        cursor: pointer;
+        &:hover { background: linear-gradient(120deg, #c0f9d7, #b9f3ee); }
+    }
+    &__mail { color: #296b6e; font-size: 13px; text-decoration: none; }
+    .contact-dialog__status { min-height: 20px; margin: 12px 0 0; color: #287d70; font-size: 12px; }
+    &__qr {
+        width: 240px;
+        max-width: 100%;
+        margin: 22px auto;
+        padding: 10px;
+        border: 1px solid rgba(51, 112, 101, .14);
+        border-radius: 14px;
+        background: #fff;
+        box-shadow: 0 8px 24px rgba(21, 63, 59, .07);
+        img { display: block; width: 100%; height: auto; margin: 0; border-radius: 5px; }
+    }
+    @media (max-width: 600px) {
+        padding: 32px 22px 22px;
+        .contact-dialog__heading { font-size: 24px; }
+        .contact-dialog__address { font-size: 16px; }
+    }
+}
+
+@media (max-width: 924px) {
+    .robotics-home .sidebar {
+        padding: 18px;
+        .profile_box { display: grid; grid-template-columns: 84px minmax(0, 1fr); gap: 16px; align-items: center; }
+        .author__avatar { display: block; width: 84px; }
+        .author__avatar img { width: 84px; min-width: 0; max-width: 84px; margin: 0; }
+        .author__content { display: block; padding: 0; min-width: 0; }
+        .author__name { margin: 0 0 12px; font-size: 19px; line-height: 1.25; }
+        .author__affiliations { margin: 0; gap: 8px; }
+        .author__affiliation { font-size: 12px; white-space: normal; gap: 7px; line-height: 1.4; }
+        .author__urls-wrapper { display: block; grid-column: 1 / -1; margin: 0; padding-top: 14px; border-top: 1px solid rgba(26, 69, 73, .10); cursor: auto; }
+        .author__urls_sm {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 8px;
+            padding: 0;
+            font-size: 12px;
+            a { display: inline-flex; align-items: center; gap: 6px; padding: 7px 9px; border: 1px solid rgba(45, 109, 111, .14); border-radius: 8px; background: rgba(255, 255, 255, .65); color: #2d5058; line-height: 1.4; }
+            i { color: #159b9a; font-size: 14px; }
+        }
+    }
+}
+
+/* A still frame is all these readers get, so lean on opacity for contrast. */
+@media (prefers-reduced-motion: reduce) {
+    .robotics-background__video { transition: none; }
+    .robotics-background__grain { animation: none; }
+    .robotics-home {
+        .page__content,
+        .sidebar { background: rgba(255, 255, 255, .62); }
+    }
+}

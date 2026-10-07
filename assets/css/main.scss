@@ -404,12 +404,6 @@ a:focus-visible, button:focus-visible {
     outline: 3px solid #0a7ea8;
     outline-offset: 4px;
 }
-#email-modal, #wechat-qr {
-    overflow-y: auto;
-    padding: 0 16px 24px;
-    > div { max-width: 100%; box-sizing: border-box; }
-    p { overflow-wrap: anywhere; }
-}
 @media (max-width: 600px) {
     .experience-box:not(.education-box) {
         display: grid;
@@ -432,3 +426,5 @@ a:focus-visible, button:focus-visible {
     }
     .paper-box:hover, .paper-box:hover img, .paper-box:hover video { transform: none; }
 }
+
+@import "robotics-visuals";

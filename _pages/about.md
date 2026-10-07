@@ -22,37 +22,40 @@ My research currently focuses on **robotics**, with a particular emphasis on **f
 
 🤝 <strong>Open to collaborations</strong> on robotics and embodied foundation models. If you share these interests, let's talk!
 
-<span style="display: inline-block; margin-top: 10px; padding: 8px 16px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 6px;">
+<span style="display: inline-block; margin-top: 10px; padding: 8px 16px; background: linear-gradient(135deg, rgba(102,126,234,.80) 0%, rgba(118,75,162,.80) 100%); border-radius: 6px;">
   <span style="color: #fff; font-size: 0.9em;">
     Contact me via 📬
-    <a href="#" onclick="event.preventDefault(); document.getElementById('email-modal').style.display='block';" style="color: #fff; text-decoration: underline;">Email</a>
+    <button type="button" class="contact-trigger" data-contact-dialog="email-modal" aria-haspopup="dialog">Email</button>
     /
-    <a href="#" onclick="event.preventDefault(); document.getElementById('wechat-qr').style.display='block';" style="color: #fff; text-decoration: underline;">WeChat</a>
+    <button type="button" class="contact-trigger" data-contact-dialog="wechat-qr" aria-haspopup="dialog">WeChat</button>
   </span>
 </span>
-<a href="https://scholar.google.com.hk/citations?user=uoRPLHIAAAAJ" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin-top: 10px; margin-left: 8px; padding: 8px 16px; background: linear-gradient(135deg, #4285F4 0%, #0F9D58 100%); border-radius: 6px; text-decoration: none; vertical-align: top;">
-  <span style="color: #fff; font-size: 0.9em;">🎓 Google Scholar Citations: <strong id="total_cit">2779</strong></span>
+<a href="https://scholar.google.com.hk/citations?user=uoRPLHIAAAAJ" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin-top: 10px; margin-left: 8px; padding: 8px 16px; background: linear-gradient(135deg, rgba(66,133,244,.80) 0%, rgba(15,157,88,.80) 100%); border-radius: 6px; text-decoration: none; vertical-align: top;">
+  <span style="color: #fff; font-size: 0.9em;">🎓 Google Scholar Citations: <strong id="total_cit">2801</strong></span>
 </a>
 
 <!-- Email Modal -->
-<div id="email-modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.5); z-index:9999; text-align:center;">
-  <div style="display:inline-block; margin-top:10vh; background:#fff; padding:24px 24px 12px 24px; border-radius:12px; position:relative;">
-    <span style="position:absolute; top:8px; right:16px; font-size:24px; cursor:pointer;" onclick="document.getElementById('email-modal').style.display='none';">&times;</span>
-    <p style="margin-bottom:8px;"><strong>My Email Address</strong></p>
-    <p style="font-size:1.2em; color:#333; user-select:all;">yujiwen.hk@connect.hku.hk</p>
-    <button onclick="navigator.clipboard.writeText('yujiwen.hk@connect.hku.hk')" style="margin-top:8px; padding:4px 12px; border-radius:6px; border:none; background:#f5f5f5; cursor:pointer;">Copy</button>
+<dialog id="email-modal" class="contact-dialog" aria-labelledby="email-heading">
+  <button type="button" class="contact-dialog__close" data-dialog-close aria-label="Close email dialog">&times;</button>
+  <span class="contact-dialog__eyebrow">DIRECT CONTACT</span>
+  <h2 id="email-heading" class="contact-dialog__heading">Let’s connect.</h2>
+  <p class="contact-dialog__description">For research, collaborations, and conversations.</p>
+  <p class="contact-dialog__address">yujiwen.hk@connect.hku.hk</p>
+  <div class="contact-dialog__actions">
+    <button type="button" class="contact-dialog__copy" data-copy-email autofocus>Copy email</button>
+    <a href="mailto:yujiwen.hk@connect.hku.hk" class="contact-dialog__mail">Open mail app ↗</a>
   </div>
-</div>
+  <p class="contact-dialog__status" role="status" aria-live="polite"></p>
+</dialog>
 
 <!-- WeChat QR Code Modal -->
-<div id="wechat-qr" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.5); z-index:9999; text-align:center;">
-  <div style="display:inline-block; margin-top:10vh; background:#fff; padding:24px 24px 12px 24px; border-radius:12px; position:relative;">
-    <span style="position:absolute; top:8px; right:16px; font-size:24px; cursor:pointer;" onclick="document.getElementById('wechat-qr').style.display='none';">&times;</span>
-    <p style="margin-bottom:8px;"><strong>Scan to add me on WeChat</strong></p>
-    <img src="images/wechat_qr.jpg" alt="WeChat QR Code" style="width:220px; height:auto; border-radius:8px;">
-    <p style="margin-top:12px; color:#555; font-size:1em;">Please tell me your name and affiliation (current or past) when adding my wechat. Thanks!</p>
-  </div>
-</div>
+<dialog id="wechat-qr" class="contact-dialog contact-dialog--wechat" aria-labelledby="wechat-heading">
+  <button type="button" class="contact-dialog__close" data-dialog-close aria-label="Close WeChat dialog" autofocus>&times;</button>
+  <span class="contact-dialog__eyebrow">WECHAT</span>
+  <h2 id="wechat-heading" class="contact-dialog__heading">Scan to connect.</h2>
+  <div class="contact-dialog__qr"><img src="images/wechat_qr.jpg" alt="WeChat QR Code" width="220"></div>
+  <p class="contact-dialog__description">Please tell me your name and affiliation (current or past) when adding my WeChat. Thanks!</p>
+</dialog>
 
 <span class='anchor' id='publications'></span>
 # Selected Works
@@ -184,7 +187,7 @@ Yinhuai Wang<sup>*</sup>, <u><strong>Jiwen Yu</strong></u><sup>*</sup>, Jian Zha
 
 <div class="experience-box education-box">
     <div class="experience-box-logo">
-        <img src="images/logo/HKU.jpg" alt="HKU Logo">
+        <img src="images/logo/HKU.png" alt="HKU Logo">
         <img class="mmlab-logo" src="images/logo/HKU_MMLAB_text.png" alt="HKU-MMLab Logo">
     </div>
     <div class="experience-box-text">
@@ -220,7 +223,7 @@ Yinhuai Wang<sup>*</sup>, <u><strong>Jiwen Yu</strong></u><sup>*</sup>, Jian Zha
 
 <div class="experience-box">
     <div class="experience-box-logo">
-        <img src="images/logo/anuttacon_logo.jpg" alt="Anuttacon Logo">
+        <img src="images/logo/anuttacon_logo.png" alt="Anuttacon Logo">
     </div>
     <div class="experience-box-text">
         <p><strong>2026.01 - 2026.06</strong></p>
@@ -275,14 +278,13 @@ Yinhuai Wang<sup>*</sup>, <u><strong>Jiwen Yu</strong></u><sup>*</sup>, Jian Zha
 - Primary Organizer, [VideoWorldModel](https://videoworldmodel-workshop.github.io/) (CVPR'26 Workshop)
 - Reviewer, [ICLR](https://iclr.cc/), [NeurIPS](https://neurips.cc/), [ICML](https://icml.cc/), [ECCV](https://eccv.ecva.net/), [CVPR](https://cvpr.thecvf.com/), [ICCV](https://iccv.thecvf.com/), [SIGGRAPH](https://www.siggraph.org/), [SIGGRAPH Asia](https://asia.siggraph.org/), [TPAMI](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34).
 
-<div style="margin: 20px 0; padding: 20px 24px; background: linear-gradient(135deg, #0a0a0a, #1a1a2e); border-radius: 12px; border: 1px solid rgba(0,212,255,0.3); position: relative; overflow: hidden;">
-  <div style="position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, #00d4ff, #00ff88, #00d4ff); background-size: 200% 100%; animation: gradientShift 4s ease infinite;"></div>
-  <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-bottom: 10px;">
-    <span style="font-family: 'Orbitron', sans-serif; font-weight: 600; font-size: 1.1em; letter-spacing: 2px; background: linear-gradient(90deg, #00d4ff, #00ff88, #00d4ff); background-size: 200% 100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: gradientShift 4s ease infinite;">VideoWorldModel</span>
-    <span style="background: rgba(0,212,255,0.15); color: #00d4ff; padding: 2px 10px; border-radius: 20px; font-size: 0.78em; font-weight: 500; letter-spacing: 0.5px;">CVPR 2026 Workshop</span>
+<div class="workshop-recap">
+  <div class="workshop-recap__heading">
+    <span class="workshop-recap__title">VideoWorldModel</span>
+    <span class="workshop-recap__badge">CVPR 2026 Workshop</span>
   </div>
-  <p style="color: #ccc; font-size: 0.92em; margin: 0 0 12px 0; line-height: 1.6;">
-    I served as a Primary Organizer of the <strong style="color: #fff;">Video World Models</strong> workshop at CVPR 2026. The workshop has now concluded — you can revisit the program and accepted works on the workshop website.
+  <p>
+    I served as a Primary Organizer of the <strong>Video World Models</strong> workshop at CVPR 2026. The workshop has now concluded — you can revisit the program and accepted works on the workshop website.
   </p>
-  <a href="https://videoworldmodel-workshop.github.io/" target="_blank" style="display: inline-block; padding: 7px 20px; border: 1px solid #00d4ff; color: #00d4ff; border-radius: 6px; font-size: 0.85em; font-weight: 500; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.background='#00d4ff';this.style.color='#0a0a0a'" onmouseout="this.style.background='transparent';this.style.color='#00d4ff'">View Recap →</a>
+  <a class="workshop-recap__link" href="https://videoworldmodel-workshop.github.io/" target="_blank" rel="noopener">View Recap →</a>
 </div>
