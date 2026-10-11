@@ -1,10 +1,11 @@
 <script>
     $(document).ready(function () {
         var citEl = document.getElementById('total_cit');
-        // Show the last successfully fetched value immediately (falls back to the default in HTML)
+        var defaultCitation = citEl ? Number(citEl.textContent) : 0;
+        // Older cached stats must not overwrite the updated value in HTML.
         if (citEl) {
             var cachedCit = localStorage.getItem('total_cit_cache');
-            if (cachedCit) { citEl.innerHTML = cachedCit; }
+            if (Number(cachedCit) > defaultCitation) { citEl.textContent = Number(cachedCit); }
         }
         {% if site.google_scholar_stats_use_cdn %}
         var gsDataBaseUrl = 'https://cdn.jsdelivr.net/gh/{{ site.repository }}@'
@@ -12,8 +13,8 @@
         var gsDataBaseUrl = 'https://raw.githubusercontent.com/{{ site.repository }}/'
         {% endif %}
         $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
-            var totalCitation = data['citedby']
-            if (citEl) { citEl.innerHTML = totalCitation; }
+            var totalCitation = Math.max(defaultCitation, Number(data['citedby']) || 0);
+            if (citEl) { citEl.textContent = totalCitation; }
             // Persist the latest fetched value as the new default for future visits
             localStorage.setItem('total_cit_cache', totalCitation);
             var citationEles = document.getElementsByClassName('show_paper_citations')
