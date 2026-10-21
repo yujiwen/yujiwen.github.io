@@ -1,3 +1,5 @@
-Inter and Orbitron: same Latin faces and weights previously served by Google Fonts.
-Source: https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Inter:wght@400;500;600;700&display=swap
-Licenses: inter-OFL.txt and orbitron-OFL.txt.
+Google Sans Flex: Latin subset (variable weight 400-700) self-hosted from Google Fonts.
+Source: https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400..700&display=swap
+License: SIL Open Font License 1.1, see google-sans-flex-OFL.txt.
+
+Font Awesome and Academicons files are used by the theme's icons.

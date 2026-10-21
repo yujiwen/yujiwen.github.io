@@ -9,13 +9,30 @@
     video.src = video.dataset.src;
     video.load();
   }
+  // Some browsers refuse to autoplay even muted clips (iOS Low Power Mode,
+  // embedded web views). A tap or key press anywhere counts as permission, so
+  // the visible clips are retried on the first one.
+  let waitingForGesture = false;
+  function retryOnGesture() {
+    if (waitingForGesture) return;
+    waitingForGesture = true;
+    const kinds = ['pointerdown', 'touchend', 'keydown'];
+    const retry = () => {
+      kinds.forEach(kind => document.removeEventListener(kind, retry, true));
+      waitingForGesture = false;
+      visible.forEach(play);
+    };
+    kinds.forEach(kind => document.addEventListener(kind, retry, { capture: true, passive: true }));
+  }
   function play(video) {
     if (document.hidden) return;
     load(video);
     const promise = video.play();
-    if (promise) promise.catch(error => {
+    if (promise) promise.then(() => { video.controls = false; }, error => {
       // Scrolling away can interrupt a pending play request normally.
-      if (error.name !== 'AbortError') video.controls = true;
+      if (error.name === 'AbortError') return;
+      video.controls = true;
+      if (error.name === 'NotAllowedError') retryOnGesture();
     });
   }
   if ('IntersectionObserver' in window) {

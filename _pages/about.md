@@ -17,23 +17,21 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 <span class='anchor' id='about-me'></span>
-Hi, I'm **Jiwen**. I'm currently at **Xiaomi Robotics**, working closely with my friend [Yiran Qin](https://iranqin.github.io/).
+Hi, I'm **Jiwen**. I'm currently at <a class="inline-org" href="https://robotics.xiaomi.com/index.html"><img class="inline-org__logo" src="images/logo/xiaomi.png" alt="" width="18" height="18"><strong>Xiaomi Robotics</strong></a>, working closely with my friend [Yiran Qin](https://iranqin.github.io/).
 
-My research currently focuses on **robotics**, with a particular emphasis on **foundation models for robotics**.
+My research focuses on **robotics foundation models** and **self-evolving embodied intelligence**.
 
-🤝 <strong>Open to collaborations</strong> on robotics and embodied foundation models. If you share these interests, let's talk!
+<strong>Open to collaborations</strong>: if these directions interest you, let's talk!
 
-<span style="display: inline-block; margin-top: 10px; padding: 8px 16px; background: linear-gradient(135deg, rgba(102,126,234,.80) 0%, rgba(118,75,162,.80) 100%); border-radius: 6px;">
-  <span style="color: #fff; font-size: 0.9em;">
-    Contact me via 📬
+<p class="intro-actions">
+  <span class="intro-action">
+    Contact me via
     <button type="button" class="contact-trigger" data-contact-dialog="email-modal" aria-haspopup="dialog">Email</button>
     /
     <button type="button" class="contact-trigger" data-contact-dialog="wechat-qr" aria-haspopup="dialog">WeChat</button>
   </span>
-</span>
-<a href="https://scholar.google.com.hk/citations?user=uoRPLHIAAAAJ" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin-top: 10px; margin-left: 8px; padding: 8px 16px; background: linear-gradient(135deg, rgba(66,133,244,.80) 0%, rgba(15,157,88,.80) 100%); border-radius: 6px; text-decoration: none; vertical-align: top;">
-  <span style="color: #fff; font-size: 0.9em;">🎓 Google Scholar Citations: <strong id="total_cit">2890</strong></span>
-</a>
+  <a class="intro-action intro-action--link" href="https://scholar.google.com.hk/citations?user=uoRPLHIAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar Citations: <strong id="total_cit">2893</strong></a>
+</p>
 
 <!-- Email Modal -->
 <dialog id="email-modal" class="contact-dialog" aria-labelledby="email-heading">
@@ -61,7 +59,7 @@ My research currently focuses on **robotics**, with a particular emphasis on **f
 <span class='anchor' id='publications'></span>
 # Selected Works
 
-(*: indicates equal contribution; #: indicates corresponding author)
+<p class="works-note">*: equal contribution &nbsp;·&nbsp; #: corresponding author</p>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECCV 2026</div><video class="paper-video" data-src="videos/MemLearner.mp4" preload="none" poster="images/optimized/MemLearner-poster.webp" loop muted playsinline width="640" height="352"></video></div></div>
 <div class='paper-box-text' markdown="1">
@@ -70,7 +68,7 @@ My research currently focuses on **robotics**, with a particular emphasis on **f
 
 <u><strong>Jiwen Yu</strong></u>, Jianxiong Gao, Jianhong Bai, Yiran Qin, Kaiyi Huang, Quande Liu, Xintao Wang<sup>#</sup>, Pengfei Wan, Kun Gai, Xihui Liu<sup>#</sup>
 
-<span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">ECCV 2026</span>
+<span class="venue">ECCV 2026</span>
 
 [**Paper**](https://arxiv.org/pdf/2606.31734) **|** [**Project Page**](https://yujiwen.github.io/memlearner/)
 </div>
@@ -83,7 +81,7 @@ My research currently focuses on **robotics**, with a particular emphasis on **f
 
 <u><strong>Jiwen Yu</strong></u><sup></sup>, Jianhong Bai, Yiran Qin, Quande Liu<sup>#</sup>, Xintao Wang, Pengfei Wan, Di Zhang, Xihui Liu<sup>#</sup>
 
-<span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">SIGGRAPH Asia 2025</span>
+<span class="venue">SIGGRAPH Asia 2025</span>
 
 [**Paper**](https://arxiv.org/pdf/2506.03141) **|** [**Project Page**](https://context-as-memory.github.io/) **|** [**Dataset**](https://huggingface.co/datasets/KwaiVGI/Context-as-Memory-Dataset)
 </div>
@@ -96,7 +94,7 @@ My research currently focuses on **robotics**, with a particular emphasis on **f
 
 <u><strong>Jiwen Yu</strong></u><sup>*</sup>, Yiran Qin<sup>*</sup>, Xintao Wang<sup>#</sup>, Pengfei Wan, Di Zhang, Xihui Liu<sup>#</sup>
 
-<span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">ICCV 2025 <span style="color: #e74c3c; font-weight: bold;">Highlight</span></span>
+<span class="venue">ICCV 2025 <span class="venue__award">Highlight</span></span>
 
 [**Paper**](https://arxiv.org/pdf/2501.08325) **|** [**Project Page**](https://yujiwen.github.io/gamefactory/) **|** [**GitHub**](https://github.com/KwaiVGI/GameFactory) **|** [**Dataset**](https://huggingface.co/datasets/KwaiVGI/GameFactory-Dataset)
 </div>
@@ -109,7 +107,7 @@ My research currently focuses on **robotics**, with a particular emphasis on **f
 
 <u><strong>Jiwen Yu</strong></u><sup>*</sup>, Yiran Qin<sup>*</sup>, Haoxuan Che, Quande Liu, Xintao Wang<sup>#</sup>, Pengfei Wan, Di Zhang, Xihui Liu<sup>#</sup>  
 
-<span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">NeurIPS 2026</span>
+<span class="venue">NeurIPS 2026</span>
 
 [**Paper**](https://arxiv.org/abs/2503.17359)
 </div>
@@ -123,7 +121,7 @@ My research currently focuses on **robotics**, with a particular emphasis on **f
 
 Haoyu Wu, <u><strong>Jiwen Yu</strong></u>, Yingtian Zou, Xihui Liu
 
-<span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">CVPR 2026 Workshop MARS-EAI <span style="color: #e74c3c; font-weight: bold;">Best Paper Award</span></span>
+<span class="venue">CVPR 2026 Workshop MARS-EAI <span class="venue__award">Best Paper Award</span></span>
 
 [**Paper**](https://arxiv.org/pdf/2604.18564) **|** [**Project Page**](https://multi-world.github.io/)
 </div>
@@ -136,7 +134,7 @@ Haoyu Wu, <u><strong>Jiwen Yu</strong></u>, Yingtian Zou, Xihui Liu
 
 Yiran Qin<sup>*</sup>, Zhelun Shi<sup>*</sup>, <u><strong>Jiwen Yu</strong></u>, Xijun Wang, Enshen Zhou, Lijun Li, Zhenfei Yin, Xihui Liu, Lu Sheng, Jing Shao, Lei Bai, Wanli Ouyang, Ruimao Zhang
 
-<span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">ICML 2025</span>
+<span class="venue">ICML 2025</span>
 
 [**Paper**](https://arxiv.org/pdf/2410.18072) **|** [**Project Page**](https://iranqin.github.io/WorldSimBench.github.io/)
 </div>
@@ -149,7 +147,7 @@ Yiran Qin<sup>*</sup>, Zhelun Shi<sup>*</sup>, <u><strong>Jiwen Yu</strong></u>,
 
 <u><strong>Jiwen Yu</strong></u>, Xuanyu Zhang, Youmin Xu, Jian Zhang<sup>#</sup>
 
-<span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">NeurIPS 2023</span>
+<span class="venue">NeurIPS 2023</span>
 
 [**Paper**](https://arxiv.org/abs/2305.16936) **|** [**GitHub**](https://github.com/yujiwen/CRoSS)
 </div>
@@ -162,7 +160,7 @@ Yiran Qin<sup>*</sup>, Zhelun Shi<sup>*</sup>, <u><strong>Jiwen Yu</strong></u>,
 
 <u><strong>Jiwen Yu</strong></u>, Yinhuai Wang, Chen Zhao<sup>#</sup>, Bernard Ghanem, Jian Zhang<sup>#</sup>
 
-<span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">ICCV 2023</span>
+<span class="venue">ICCV 2023</span>
 
 [**Paper**](https://arxiv.org/abs/2303.09833) **|** [**GitHub**](https://github.com/yujiwen/FreeDoM)
 </div>
@@ -176,7 +174,7 @@ Yiran Qin<sup>*</sup>, Zhelun Shi<sup>*</sup>, <u><strong>Jiwen Yu</strong></u>,
 
 Yinhuai Wang<sup>*</sup>, <u><strong>Jiwen Yu</strong></u><sup>*</sup>, Jian Zhang<sup>#</sup>
 
-<span style="background-color: #fff9c4; color: #333; padding: 2px 8px; border-radius: 6px; font-weight: bold;">ICLR 2023 <span style="color: #e74c3c; font-weight: bold;">Spotlight</span></span>
+<span class="venue">ICLR 2023 <span class="venue__award">Spotlight</span></span>
 
 [**Paper**](https://arxiv.org/pdf/2212.00490) **|** [**GitHub**](https://github.com/wyhuai/DDNM) **|** [**Project Page**](https://wyhuai.github.io/ddnm.io/)
 </div>
@@ -218,7 +216,7 @@ Yinhuai Wang<sup>*</sup>, <u><strong>Jiwen Yu</strong></u><sup>*</sup>, Jian Zha
     </div>
     <div class="experience-box-text">
         <p><strong>2026.09 - Now</strong></p>
-        <p><a href="https://robotics.xiaomi.com/index.html">Xiaomi Robotics</a>, Beijing, China</p>
+        <p>Researcher (Top Talent Program) at <a href="https://robotics.xiaomi.com/index.html">Xiaomi Robotics</a>, Beijing, China</p>
     </div>
 </div>
 
@@ -258,19 +256,19 @@ Yinhuai Wang<sup>*</sup>, <u><strong>Jiwen Yu</strong></u><sup>*</sup>, Jian Zha
 <span class='anchor' id='talks'></span>
 # Talks
 
-- <span style="background: linear-gradient(135deg, rgba(0,212,255,0.1), rgba(0,255,136,0.1)); padding: 2px 8px; border-radius: 4px; font-size: 0.85em; color: #555;">Jul 2026</span> **Interactive Video Generation towards World Models**
+- <span class="talk-date">Jul 2026</span> **Interactive Video Generation towards World Models**
   - F2S Workshop @ ICML 2026. [[Workshop]](https://icml2026-f2s-workshop.github.io/)
 
-- <span style="background: linear-gradient(135deg, rgba(0,212,255,0.1), rgba(0,255,136,0.1)); padding: 2px 8px; border-radius: 4px; font-size: 0.85em; color: #555;">Dec 2025</span> **Controllable, Generalizable, and Memory-Enabled: Interactive Video World Models**
+- <span class="talk-date">Dec 2025</span> **Controllable, Generalizable, and Memory-Enabled: Interactive Video World Models**
   - SAAI. [[News Report]](https://mp.weixin.qq.com/s/v5QRFAu5SeodanhqeX1e8Q) (Chinese)
 
-- <span style="background: linear-gradient(135deg, rgba(0,212,255,0.1), rgba(0,255,136,0.1)); padding: 2px 8px; border-radius: 4px; font-size: 0.85em; color: #555;">Dec 2025</span> **Context as Memory: Scene-Consistent Interactive Long Video Generation with Memory Retrieval**
+- <span class="talk-date">Dec 2025</span> **Context as Memory: Scene-Consistent Interactive Long Video Generation with Memory Retrieval**
   - GAMES. [[Video]](https://www.bilibili.com/video/BV1WnmCByEnT) (Chinese)
 
-- <span style="background: linear-gradient(135deg, rgba(0,212,255,0.1), rgba(0,255,136,0.1)); padding: 2px 8px; border-radius: 4px; font-size: 0.85em; color: #555;">Oct 2025</span> **Toward Higher-Level Intelligence in Interactive Generative Video for World Model**
+- <span class="talk-date">Oct 2025</span> **Toward Higher-Level Intelligence in Interactive Generative Video for World Model**
   - AITIME. [[Video]](https://www.bilibili.com/video/BV1uu4wzuE4B) (Chinese)
 
-- <span style="background: linear-gradient(135deg, rgba(0,212,255,0.1), rgba(0,255,136,0.1)); padding: 2px 8px; border-radius: 4px; font-size: 0.85em; color: #555;">Jul 2025</span> **Toward Higher-Level Intelligence of Interactive Generative Video**
+- <span class="talk-date">Jul 2025</span> **Toward Higher-Level Intelligence of Interactive Generative Video**
   - TechBeat. [[Video]](https://www.bilibili.com/video/BV1cy8kzEEtQ/) (Chinese)
 
 <span class='anchor' id='service'></span>

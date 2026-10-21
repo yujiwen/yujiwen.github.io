@@ -1,3 +1,0 @@
-mujoco==3.15.0
-pillow>=10
-imageio-ffmpeg>=0.6

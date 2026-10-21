@@ -1,0 +1,41 @@
+/* Live background (assets/js/glow.js): soft light in the margins, drawn into a
+   fixed low-resolution canvas that the browser scales up smoothly. */
+
+.home-page { isolation: isolate; }
+
+.site-glow {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+    background: #fff;
+
+    &__canvas {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        opacity: 0;
+        transition: opacity 1.6s ease;
+    }
+    &.glow-ready &__canvas { opacity: 1; }
+
+    /* Without animation: the same light, held still. */
+    &.glow-still {
+        background:
+            radial-gradient(38vw 55vh at 4% 28%, rgba(110, 160, 245, .40), rgba(110, 160, 245, 0) 70%),
+            radial-gradient(28vw 50vh at 98% 72%, rgba(120, 190, 245, .38), rgba(120, 190, 245, 0) 70%),
+            #fff;
+    }
+    &.glow-still &__canvas { display: none; }
+}
+@media (max-width: 924px) {
+    .site-glow.glow-still {
+        background: radial-gradient(90vw 36vh at 20% 0%, rgba(110, 160, 245, .36), rgba(110, 160, 245, 0) 70%), #fff;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .site-glow__canvas { transition: none; }
+}
