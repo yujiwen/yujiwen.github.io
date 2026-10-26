@@ -1,7 +1,16 @@
 name: Get Citation Data
 
-on: 
- workflow_dispatch:
+on:
+  schedule:
+    # Weekly, Sunday 18:00 UTC. Citation counts move slowly, and GitHub
+    # auto-disables scheduled workflows on repos with no other activity
+    # for 60 days, so this alone won't keep it alive forever — a manual
+    # "Run workflow" click (or any push) resets that clock.
+    - cron: '0 18 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build:

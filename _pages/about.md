@@ -30,7 +30,7 @@ My research focuses on **robotics foundation models** and **self-evolving embodi
     /
     <button type="button" class="contact-trigger" data-contact-dialog="wechat-qr" aria-haspopup="dialog">WeChat</button>
   </span>
-  <a class="intro-action intro-action--link" href="https://scholar.google.com.hk/citations?user=uoRPLHIAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar Citations: <strong id="total_cit">2893</strong></a>
+  <a class="intro-action intro-action--link" href="https://scholar.google.com.hk/citations?user=uoRPLHIAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar Citations: <strong id="total_cit">2938</strong></a>
 </p>
 
 <!-- Email Modal -->
