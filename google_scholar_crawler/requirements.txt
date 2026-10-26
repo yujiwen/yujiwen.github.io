@@ -3,3 +3,6 @@ scholarly>=1.7,<2.0
 # scholarly still imports bibtexparser's old BibDatabase API, which 2.x
 # removed; pin to the last 1.x line so pip doesn't grab the breaking release.
 bibtexparser>=1.4,<2.0
+# scholarly's ProxyGenerator still calls httpx.Client(proxies=...), a
+# parameter httpx 0.28 removed outright; pin to the last line that accepts it.
+httpx>=0.27,<0.28
