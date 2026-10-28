@@ -12,7 +12,9 @@
         {% else %}
         var gsDataBaseUrl = 'https://raw.githubusercontent.com/{{ site.repository }}/'
         {% endif %}
-        $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
+        // jsDelivr tells browsers to cache this file for 7 days; the query string
+        // bypasses that (the CDN ignores it, so its own cache still applies).
+        $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json?t=" + Date.now(), function (data) {
             var totalCitation = Math.max(defaultCitation, Number(data['citedby']) || 0);
             if (citEl) { citEl.textContent = totalCitation; }
             // Persist the latest fetched value as the new default for future visits

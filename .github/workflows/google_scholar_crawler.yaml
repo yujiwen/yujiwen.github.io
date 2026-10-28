@@ -35,3 +35,10 @@ jobs:
         git push "${remote_repo}" HEAD:google-scholar-stats --force
       env: 
         GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
+    - name: Purge jsDelivr cache
+      # The homepage reads these files through jsDelivr, which otherwise keeps
+      # serving the previous copy for up to 12 hours after the push above.
+      run: |
+        for f in gs_data.json gs_data_shieldsio.json; do
+          curl -sS --retry 3 "https://purge.jsdelivr.net/gh/${GITHUB_REPOSITORY}@google-scholar-stats/$f"
+        done
