@@ -17,7 +17,7 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 <span class='anchor' id='about-me'></span>
-Hi, I'm **Jiwen**. I'm currently at <a class="inline-org" href="https://robotics.xiaomi.com/index.html"><img class="inline-org__logo" src="images/logo/xiaomi.png" alt="" width="18" height="18"><strong>Xiaomi Robotics</strong></a>, working closely with my friend [Yiran Qin](https://iranqin.github.io/).
+Hi, I'm **Jiwen**. I'm a Ph.D. student at [HKU-MMLab](https://mmlab.hk/), The University of Hong Kong, advised by Prof. [Xihui Liu](https://xh-liu.github.io/). I'm currently at <a class="inline-org" href="https://robotics.xiaomi.com/index.html"><img class="inline-org__logo" src="images/logo/xiaomi.png" alt="" width="18" height="18"><strong>Xiaomi Robotics</strong></a>, working closely with my friend [Yiran Qin](https://iranqin.github.io/).
 
 My research focuses on **robotics foundation models** and **self-evolving embodied intelligence**.
 
