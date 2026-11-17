@@ -1,9 +1,20 @@
 from scholarly import scholarly, ProxyGenerator
+from fp.fp import FreeProxy
 import jsonpickle
 import json
 from datetime import datetime
 import os
 import time
+
+# free-proxy (1.3.0) reads each proxy from sslproxies.org's table as
+# "<column 1>:<column 2>", i.e. "IP Address:Port". The site (now redirecting
+# to free-proxy-list.net/ssl-proxy.html) switched to "IP:Port | Protocol", so
+# entries come out as "1.2.3.4:80:HTTP" and httpx rejects them ("Invalid
+# port: '80:HTTP'"). Trim each back to ip:port; a no-op on the old layout.
+_get_proxy_list = FreeProxy.get_proxy_list
+def get_proxy_list(self, repeat):
+    return [':'.join(p.split(':')[:2]) for p in _get_proxy_list(self, repeat)]
+FreeProxy.get_proxy_list = get_proxy_list
 
 # Google Scholar blocks GitHub Actions runner IPs and serves a robot page,
 # which breaks parsing (missing #gsc_prf_in). Route requests through free
